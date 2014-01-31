@@ -1,0 +1,1796 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"function",
+				"create_function"
+			],
+			[
+				"back",
+				"background-origin"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"bol",
+				"bold"
+			],
+			[
+				"blo",
+				"inline-block"
+			],
+			[
+				"ce",
+				"center_blocks"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"section",
+				"section-colored"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"bold",
+				"bolder"
+			],
+			[
+				"get",
+				"get	$.get()"
+			],
+			[
+				"fade",
+				"fadeIn	.fadeIn()"
+			],
+			[
+				"r_pickup",
+				"r_pickup_time"
+			],
+			[
+				"r_pickup_",
+				"r_pickup_date"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"r_cap",
+				"r_cap_or"
+			],
+			[
+				"head",
+				"headers"
+			],
+			[
+				"r_n",
+				"r_n"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"elem",
+				"element"
+			],
+			[
+				"_",
+				"_SESSION"
+			],
+			[
+				"aci",
+				"acity_string"
+			],
+			[
+				"err",
+				"errors"
+			],
+			[
+				"add",
+				"addClass	addClass"
+			],
+			[
+				"sub",
+				"submit	submit"
+			],
+			[
+				"form",
+				"form_1"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"bo",
+				"bold"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"html",
+				"html	html"
+			],
+			[
+				"tect",
+				"text-decoration"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"proces",
+				"proces_array"
+			],
+			[
+				"background-",
+				"background-position"
+			],
+			[
+				"backgroun",
+				"background-origin"
+			],
+			[
+				"arra",
+				"array_names"
+			],
+			[
+				"array_",
+				"array_multisort"
+			],
+			[
+				"array",
+				"array_count_values"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"login",
+				"login_box"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"nab",
+				"navbar-top"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"error",
+				"error_reporting"
+			],
+			[
+				"str",
+				"str_split"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"ca",
+				"calender_table"
+			],
+			[
+				"me",
+				"menu"
+			],
+			[
+				"menu_get_",
+				"menu_get_projects_from_cat"
+			],
+			[
+				"men",
+				"menu_pub"
+			],
+			[
+				"pla",
+				"player_val"
+			],
+			[
+				"new",
+				"new_numbers"
+			],
+			[
+				"win",
+				"win_string"
+			],
+			[
+				"p",
+				"player1_turns"
+			],
+			[
+				"play",
+				"player2_turns"
+			],
+			[
+				"wi",
+				"win_string"
+			],
+			[
+				"arr",
+				"array_player_2"
+			],
+			[
+				"ar",
+				"array_player_1"
+			],
+			[
+				"htmlsp",
+				"htmlspecialchars_decode"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"slid",
+				"slideDown"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"file",
+				"file_form_edit"
+			],
+			[
+				"uploa",
+				"uploading_form"
+			],
+			[
+				"settingHome",
+				"settingHomeBgImage"
+			],
+			[
+				"setting",
+				"setting_url"
+			],
+			[
+				"hiak_",
+				"hiak_settings"
+			],
+			[
+				"load",
+				"load_news"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"proj",
+				"projectId"
+			],
+			[
+				"news",
+				"new_slider"
+			],
+			[
+				"su",
+				"supersized"
+			],
+			[
+				"meta",
+				"metaKeywords"
+			],
+			[
+				"htm",
+				"html	html"
+			],
+			[
+				"src",
+				"src_new"
+			],
+			[
+				"teamM",
+				"teamMemberPicture"
+			],
+			[
+				"vie",
+				"view_profile"
+			],
+			[
+				"get_t",
+				"get_team_detail"
+			],
+			[
+				"fn",
+				"function"
+			],
+			[
+				"teamMemberDesign",
+				"teamMemberDesignation"
+			],
+			[
+				"ma",
+				"marquee"
+			],
+			[
+				"clear",
+				"clear_bg"
+			],
+			[
+				"bg_i",
+				"bg_img_1"
+			],
+			[
+				"sel",
+				"selected_cat"
+			],
+			[
+				"select",
+				"selected_cat"
+			],
+			[
+				"home",
+				"menu_home"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"foot",
+				"footer_bar"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"proje",
+				"project_cat"
+			],
+			[
+				"notes_",
+				"notes_desc"
+			],
+			[
+				"side",
+				"sidebar_container"
+			],
+			[
+				"sidebar",
+				"sidebar_title"
+			],
+			[
+				"hiak_proje",
+				"hiak_project_images"
+			],
+			[
+				"hiak_pr",
+				"hiak_projects"
+			],
+			[
+				"qu",
+				"query"
+			],
+			[
+				"user",
+				"userdata"
+			],
+			[
+				"fil",
+				"file_url"
+			],
+			[
+				"file_",
+				"file_url"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"json_",
+				"json_data"
+			],
+			[
+				"client",
+				"clientId"
+			],
+			[
+				"myMo",
+				"myModal"
+			],
+			[
+				"hiak_proj",
+				"hiak_project_images"
+			],
+			[
+				"inser",
+				"insert_id"
+			],
+			[
+				"ins",
+				"insert_id"
+			],
+			[
+				"tick",
+				"tickets"
+			],
+			[
+				"ticket_",
+				"ticket_post"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"tic",
+				"ticket_box"
+			],
+			[
+				"add_",
+				"add_ticket"
+			],
+			[
+				"comment_",
+				"comments_bottom"
+			],
+			[
+				"id",
+				"id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/config/database.php",
+			"settings":
+			{
+				"buffer_size": 3221,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/console.php",
+			"settings":
+			{
+				"buffer_size": 6487,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/css/css.css",
+			"settings":
+			{
+				"buffer_size": 2018,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/models/traders_model.php",
+			"settings":
+			{
+				"buffer_size": 1650,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "jquery.avgrund.js-master/example/index.html",
+			"settings":
+			{
+				"buffer_size": 3768,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/console/dashboard.php",
+			"settings":
+			{
+				"buffer_size": 7100,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"git ",
+				"Git: Commit history"
+			],
+			[
+				"",
+				"Project: Add Folder"
+			]
+		],
+		"width": 487.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/DELL/AppData/Local/Temp/7zO5F8A.tmp/style.css",
+		"/E/wamp/www/trader/application/controllers/traders.php",
+		"/E/wamp/www/trader/application/views/console/dashboard.php",
+		"/E/wamp/www/trader/resources/js/js.js",
+		"/E/wamp/www/trader/application/views/console/login.php",
+		"/E/wamp/www/trader/application/views/console/message.php",
+		"/E/wamp/www/ak_web/application/controllers/clientarea.php",
+		"/E/wamp/www/trader/application/models/traders_model.php",
+		"/E/wamp/www/trader/map/demo_usa.html",
+		"/E/wamp/www/trader/application/views/main.php",
+		"/E/wamp/www/ak_web/application/controllers/user.php",
+		"/E/wamp/www/trader/application/views/console/signup.php",
+		"/E/wamp/www/trader/application/views/404.php",
+		"/E/wamp/www/trader/application/views/404.html",
+		"/E/wamp/www/trader/application/config/user_agents.php",
+		"/E/wamp/www/trader/application/config/constants.php",
+		"/E/wamp/www/trader/application/config/autoload.php",
+		"/E/wamp/www/trader/application/config/config.php",
+		"/E/wamp/www/trader/bootstrap/config.json",
+		"/E/wamp/www/ak_web/application/controllers/welcome.php",
+		"/E/wamp/www/trader/application/views/console.php",
+		"/E/wamp/www/ak_web/application/config/autoload.php",
+		"/E/wamp/www/ak_web/application/models/user_model.php",
+		"/E/wamp/www/trader/application/controllers/traders.html",
+		"/E/wamp/www/trader/application/models/traders_model.html",
+		"/E/wamp/www/ak_web/application/controllers/admin_users.php",
+		"/E/wamp/www/twitter/index.html",
+		"/E/wamp/www/rentacarinislamabad.pk/index.php",
+		"/E/wamp/www/rentacarinislamabad.pk/main_menu.php",
+		"/E/wamp/www/ak_web/application/views/user/header.php",
+		"/E/wamp/www/trader/application/config/routes.php",
+		"/E/Resource/css frameworks/bootstrap/css/bootstrap.css",
+		"/E/wamp/www/trader/application/views/welcome_message.php",
+		"/E/wamp/www/twitter/src/index.html",
+		"/E/wamp/www/rentacarinislamabad.pk/resource/css/css.css",
+		"/C/Users/DELL/Downloads/twitter project/src/index.html",
+		"/C/Users/DELL/Downloads/twitter project/src/css/style.css",
+		"/C/Users/DELL/Downloads/fplus/final/css/modern-business2.css",
+		"/C/Users/DELL/Downloads/fplus/final/index.html",
+		"/C/Users/DELL/Desktop/alvitransport/index.html",
+		"/C/Users/DELL/Downloads/fplus/css/modern-business2.css",
+		"/E/wamp/www/elance.php",
+		"/C/Users/DELL/Downloads/fplus/index.final.html",
+		"/C/Users/DELL/AppData/Local/Temp/7zO9AFA.tmp/README.md",
+		"/C/Users/DELL/AppData/Local/Temp/7zOA3A2.tmp/README.md",
+		"/C/Users/DELL/Downloads/fplus/index.html",
+		"/C/Users/DELL/Downloads/fplus/index3.html",
+		"/C/Users/DELL/Downloads/fplus/css/modern-business.css",
+		"/C/Users/DELL/Downloads/fplus/index2.html",
+		"/C/Users/DELL/Downloads/modern-business/css/modern-business.css",
+		"/C/Users/DELL/Downloads/modern-business/index.html",
+		"/C/Users/DELL/Downloads/modern-business/index_raw.html",
+		"/C/Users/DELL/Downloads/modern-business/portfolio-item.html",
+		"/E/wamp/www/socialmarketing/bonfire/application/config/config.php",
+		"/E/wamp/www/socialmarketing/bonfire/application/controllers/home.php",
+		"/E/wamp/www/socialmarketing/bonfire/application/views/install/index.php",
+		"/E/wamp/www/socialmarketing/Bonfire-master/application/controllers/home.php",
+		"/E/wamp/www/socialmarketing/Bonfire-master/application/controllers/install.php",
+		"/E/wamp/www/socialmarketing/Bonfire-master/application/config/database.php",
+		"/E/wamp/www/socialmarketing/bonfire/application/config/database.php",
+		"/E/wamp/www/socialmarketing/Bonfire-master/index.php",
+		"/E/wamp/www/socialmarketing/bonfire/application/views/home/index.php",
+		"/E/wamp/www/socialmarketing/bonfire/application/views/profiler_template.php",
+		"/E/wamp/www/socialmarketing/bonfire/application/views/install/do_install.php",
+		"/E/wamp/www/socialmarketing/bonfire/application/libraries/Profiler.php",
+		"/E/wamp/www/socialmarketing/bonfire/README.markdown",
+		"/E/wamp/www/socialmarketing/bonfire/.gitignore",
+		"/E/wamp/www/pehamraza.com/portfolio/fdw-demo.css",
+		"/E/wamp/www/pehamraza.com/index.html",
+		"/E/wamp/www/pehamraza.com/portfolio/index.html",
+		"/E/wamp/www/pehamraza.com/portfolio/style.css",
+		"/E/wamp/www/pehamraza.com/portfolio/css/screen.css",
+		"/E/wamp/www/pehamraza.com/resource/css.css",
+		"/C/Users/DELL/Downloads/sitemap_addl.xml",
+		"/C/Users/DELL/Downloads/sitemap.xml",
+		"/E/wamp/www/pehamraza.com/resource/js.js",
+		"/C/Users/DELL/Downloads/sitemap.xml.gz",
+		"/E/wamp/www/pehamraza.com/portfolio/js/modernizr.custom.js",
+		"/E/wamp/www/pehamraza.com/backup 1/portfolio/js/modernizr.custom.js",
+		"/E/wamp/www/pehamraza.com/portfolio/css/lightbox.css",
+		"/E/wamp/www/pehamraza.com/resource/jquery-1.10.2.min.js",
+		"/E/wamp/www/faizullah/carrentalsinislamabad.pk/resource/css/css.css",
+		"/E/wamp/www/faizullah/carrentalsinislamabad.pk/resource/js/js.js",
+		"/E/wamp/www/faizullah/carrentalsinislamabad.pk/index.php",
+		"/E/wamp/www/faizullah/carrentalsinislamabad.pk/contact.php",
+		"/E/wamp/www/pjm/contact.php",
+		"/E/wamp/www/pakjapan/contact.php",
+		"/E/wamp/www/faizullah/carrentalsinislamabad.pk/about.php",
+		"/E/wamp/www/faizullah/carrentalsinislamabad.pk/index.html",
+		"/E/wamp/www/faizullah/carrentalsinislamabad.pk/main_menu.php",
+		"/C/Users/DELL/Desktop/Desktop/animationtest2/resource/css/css.css",
+		"/C/Users/DELL/Desktop/Desktop/animationtest2/index.html",
+		"/E/wamp/www/faizullah/carrentalsinislamabad.pk/page.php",
+		"/E/wamp/www/faizullah/carrentalsinislamabad.pk/cars.php",
+		"/E/wamp/www/faizullah/carrentalsinislamabad.pk/bootstrap/css/bootstrap.css",
+		"/E/wamp/www/jobs_design/resource/css/navbar.css",
+		"/E/wamp/www/jobs_design/resource/css/css.css",
+		"/E/wamp/www/jobs_design/index.html",
+		"/E/wamp/www/chat/1st sent/get_messages.php",
+		"/E/wamp/www/chat/1st sent/index.php",
+		"/E/wamp/www/chat/1st sent/post_messages.php",
+		"/E/wamp/www/chat/1st sent/chat.zip",
+		"/E/wamp/www/chat/ajax.js",
+		"/C/Users/DELL/Desktop/Lightweight-jQuery-Timeline-Plugin-jqtimeline/index.html",
+		"/E/wamp/www/faizullah/carrentalsinislamabad.pk/bootstrap/js/bootstrap.min.js",
+		"/C/Users/DELL/Desktop/html/css/style.css",
+		"/C/Users/DELL/Desktop/html/page.html",
+		"/C/Users/DELL/Desktop/html/portfolio.html",
+		"/C/Users/DELL/Desktop/html/contact.html",
+		"/C/Users/DELL/Desktop/html/index.html",
+		"/C/Users/DELL/Desktop/Desktop/page_load_script/js.js",
+		"/C/Users/DELL/Desktop/Desktop/page_load_script/README.md",
+		"/C/Users/DELL/Desktop/Desktop/page_load_script/index.html",
+		"/C/Users/DELL/Desktop/Desktop/page_load_script/loading.css",
+		"/C/Users/DELL/Desktop/Desktop/page_load_script/css.css",
+		"/C/Users/DELL/Desktop/Desktop/page_load_script/ftpsync.settings",
+		"/C/Users/DELL/Desktop/Desktop/page_load_script/big_image.jpg",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/FTPSync/FTPSync.sublime-settings",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/FTPSync/Default (Windows).sublime-keymap",
+		"/C/Users/DELL/Desktop/Desktop/page_load_script/loading.gif",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/User/FTPSync.sublime-settings",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
+		"/C/Users/DELL/Desktop/Desktop/test2/resource/js/js.js",
+		"/C/Users/DELL/Desktop/Desktop/test2/index.html",
+		"/C/Users/DELL/Desktop/Desktop/test2/new.html",
+		"/C/Users/DELL/Desktop/Desktop/testt/examples/main.css",
+		"/C/Users/DELL/Desktop/Desktop/testt/new.html"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"E:\\wamp\\www\\socialmarketing",
+			"",
+			"E:\\wamp\\www\\naqash\\zeeshan"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"goback",
+			"===",
+			"traders/",
+			"traders",
+			"traders/",
+			"go back",
+			"go",
+			"logout",
+			"lougout",
+			"404",
+			"signup_message",
+			"signup",
+			"traders/register/register_message",
+			"clientarea",
+			"ClientArea",
+			"user/",
+			"\\",
+			"database",
+			"Live:",
+			"2",
+			"#panel-",
+			"tab-pane active",
+			"top_",
+			"logo",
+			"main",
+			".nav",
+			".nav > li > a",
+			" btn-default",
+			"banner",
+			"<img src=\"",
+			"<a href=\"\" class=\"\">",
+			"carou",
+			"myC",
+			"col-lg-4 col-md-4\">",
+			"6",
+			"Nom ",
+			"footer_botom",
+			"well",
+			"place1",
+			"top_10",
+			".carousel-control",
+			"navbar",
+			"modern business",
+			"disp",
+			"install_url",
+			"$install_url",
+			"Let's make this the best kick-start to any CodeIgniter project",
+			"$install_url",
+			".site-personal .site-avatar",
+			"post\"><a href=\"http://www.freshdesignweb.com/responsive-portfolio-gallery-with-jquery-tutorial.html\"",
+			"post\"><a href=\"http://www.freshdesignweb.com/responsive-portfolio-gallery-with-jquery-tutorial.html",
+			"da-animate",
+			"container",
+			"@",
+			"images/",
+			"container",
+			"lightbox",
+			"\\./*[a-z]",
+			"\\./*/a",
+			".\\*",
+			".\\a",
+			".",
+			"id=\"",
+			"class=\"",
+			"http://pehamraza.com/portfolio/",
+			"main2",
+			"btn-portfolio",
+			"jpg\"></a></span>",
+			"</a></span>",
+			"pehamraza@gmail.com",
+			"r_m",
+			"r_r_e",
+			"email",
+			"r_r_e",
+			"cell",
+			"r_r_n",
+			"name",
+			"Name",
+			"name",
+			"name=\"",
+			"tab-pane",
+			"resource/images/cars/xli.jpg",
+			"class=\"",
+			"heading",
+			"rel=\"lightbox\"",
+			" class=\"",
+			"<div class=\"col-md-4\">",
+			"book your",
+			"book you car",
+			"about",
+			"footer",
+			"mtab",
+			"border: 1px solid",
+			"menu",
+			"element",
+			"return_date",
+			"pickup_time",
+			"pickup_date",
+			" <input",
+			"htype",
+			"acity",
+			"car",
+			"location",
+			"name=\"",
+			"<input",
+			"input",
+			"selected=\"",
+			"location",
+			"name=\"",
+			"form",
+			"home",
+			"about",
+			"footer",
+			"start",
+			"offset",
+			" \"=\"\"",
+			" book",
+			"mytab",
+			"bg",
+			"bg ",
+			"bg",
+			"center",
+			"section",
+			"<hr>",
+			"myTab",
+			"title",
+			">",
+			"main"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"console/",
+			"message",
+			"console/signup/message",
+			"console",
+			"Console",
+			"traders/",
+			"console/",
+			"post\"><a href=\"\" class=\"detail\" onclick=\"get_detail()\"",
+			"post\"><a href=\"",
+			"da-animate thumbnail",
+			"PORTFOLIOCONTAINER",
+			"http://127.0.0.1/pehamraza.com/portfolio/images/",
+			".portfolio",
+			"id=\"portfolio",
+			"class=\"portfolio",
+			"http://127.0.0.1/pehamraza.com/portfolio/",
+			"atn11@hotmail.com",
+			"mtab",
+			"left",
+			"files",
+			"Attabak Pharmaceutical",
+			"",
+			"logo.png",
+			"BCDFFF",
+			"float: left",
+			"../images/bg.jpg",
+			"../../../images/bg.jpg",
+			"../../../bg.jpg",
+			"bg.png",
+			"background-position: 0px 0px;",
+			"background-position: 0px 100px;",
+			"background-position: 0px -100px;",
+			"190% ",
+			"170% 150%",
+			"170%",
+			" 12s",
+			" 120% 120%;",
+			"background: url(bg.jpg) no-repeat center;",
+			"duration:15s",
+			"duration:10s",
+			"150%",
+			"myanim",
+			"value",
+			"<br /><br />",
+			"_GET",
+			"_POST",
+			"html';",
+			"location.href = ",
+			"moves",
+			"turn",
+			"Computer Wins!",
+			"You Win!",
+			"Player 2 Win",
+			"Player 1 Win",
+			"Player 3 Win",
+			"Player 2 Win",
+			"alert('Player 2 Win'); $('#player').text(\"Player 2 Win\");",
+			"alert('Player 1 Win'); $('#player').text(\"Player 1 Win\");",
+			"window.location('index.html');",
+			"alert('Player 2 Win'); window.location('');",
+			"alert('Player 1 Win'); window.location('');",
+			"', '",
+			", ",
+			"win_string",
+			"player2_turns",
+			"player1_turns",
+			"turn",
+			"tee",
+			"$tex_len",
+			"'<?php echo tex.substring",
+			"<?php echo tex.substring",
+			"escape(tex.substring",
+			" font-family: 'Satisfy', cursive;",
+			"padding-top: 20px; height: 65px;",
+			"padding-top: 20px; width: 65px;",
+			"padding-top: 20px; padding-bottom: -20px;",
+			"padding-top: 20px; margin-bottom: -20px;",
+			"font-size: 200%; padding-top: 20px;",
+			"#3BD3B5",
+			"",
+			"s.",
+			"o.",
+			"f.",
+			"w.",
+			"e.",
+			" Email",
+			"admins",
+			"Password",
+			"adminEmail",
+			"adminPassword",
+			"adminEmail",
+			"adminName",
+			"Administrator",
+			"admin",
+			"img",
+			"uploads/settings",
+			"settingSocialLink2",
+			"settingSocialLink1",
+			"settingHomeText",
+			"admin_settings",
+			"settings/settings",
+			"settingsId",
+			"setting",
+			"Setting",
+			"setting",
+			"empty()",
+			"40px",
+			"<br />",
+			"./incs/bg_slider/img",
+			"./incs/bg_slider/",
+			"incs",
+			"\"+url+\"",
+			"\\>",
+			"\\<",
+			"'",
+			"<?php echo base_url(); ?>/incs/modal/assets/",
+			"<?php echo base_url(); ?>/incs/modal/",
+			"./assets/",
+			"",
+			"btn_close\">[x]",
+			"images",
+			"class=\"bg_img\"",
+			".bg_img",
+			"$('.selected').removeClass('selected'); $(this).addClass('selected');",
+			"$(this).addClass('selected');",
+			"$(this).parent().addClass('selected');",
+			"news",
+			"publication"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/config/database.php",
+					"settings":
+					{
+						"buffer_size": 3221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2588,
+								2588
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 363.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/controllers/console.php",
+					"settings":
+					{
+						"buffer_size": 6487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5135,
+								5135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2086.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "resources/css/css.css",
+					"settings":
+					{
+						"buffer_size": 2018,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2014,
+								2014
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 182.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/models/traders_model.php",
+					"settings":
+					{
+						"buffer_size": 1650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1382,
+								1382
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 84.0,
+						"translation.y": 252.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "jquery.avgrund.js-master/example/index.html",
+					"settings":
+					{
+						"buffer_size": 3768,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 915.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/views/console/dashboard.php",
+					"settings":
+					{
+						"buffer_size": 7100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3214,
+								3214
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 832.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.475708502024,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"dash",
+				"application/views/console/dashboard.php"
+			],
+			[
+				"trader_mo",
+				"application/models/traders_model.php"
+			],
+			[
+				"appviewdash",
+				"application/views/console/dashboard.php"
+			],
+			[
+				"main",
+				"application/views/main.php"
+			],
+			[
+				"login",
+				"application/views/console/login.php"
+			],
+			[
+				"signup",
+				"application/views/console/signup.php"
+			],
+			[
+				"message",
+				"application/views/console/message.php"
+			],
+			[
+				"404",
+				"application/views/404.php"
+			],
+			[
+				"config",
+				"application/config/constants.php"
+			],
+			[
+				"",
+				"application/views/console/login.php"
+			],
+			[
+				"auto",
+				"application/config/autoload.php"
+			],
+			[
+				"mess",
+				"application/views/console/message.php"
+			],
+			[
+				"sign",
+				"application/views/console/signup.php"
+			],
+			[
+				"signu",
+				"application/views/console/signup.php"
+			],
+			[
+				"welcome",
+				"application/controllers/welcome.php"
+			],
+			[
+				"welom",
+				"application/views/welcome_message.php"
+			],
+			[
+				"route",
+				"application/config/routes.php"
+			],
+			[
+				"data",
+				"application/config/database.php"
+			],
+			[
+				"inde",
+				"src/index.html"
+			],
+			[
+				"css",
+				"src/css/style.css"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"final/css",
+				"final/css/modern-business2.css"
+			],
+			[
+				"final/ind",
+				"final/index.html"
+			],
+			[
+				"business2",
+				"css/modern-business2.css"
+			],
+			[
+				"index.f",
+				"index.final.html"
+			],
+			[
+				"index2",
+				"index2.html"
+			],
+			[
+				"database",
+				"Bonfire-master/application/config/database.php"
+			],
+			[
+				"application/libraries/",
+				"bonfire/application/libraries/Profiler.php"
+			],
+			[
+				"application/views/",
+				"bonfire/application/views/home/index.php"
+			],
+			[
+				"application/contr",
+				"bonfire/application/controllers/home.php"
+			],
+			[
+				"confi",
+				"bonfire/application/config/config.php"
+			],
+			[
+				"fd",
+				"portfolio/fdw-demo.css"
+			],
+			[
+				"portfoliocss",
+				"portfolio/style.css"
+			],
+			[
+				"portfolio/js",
+				"backup 1/portfolio/js/modernizr.custom.js"
+			],
+			[
+				"port",
+				"portfolio/index.html"
+			],
+			[
+				"jquery",
+				"portfolio/js/jquery-1.10.2.min.js"
+			],
+			[
+				"conta",
+				"contact.php"
+			],
+			[
+				"index.php",
+				"index.php"
+			],
+			[
+				"js",
+				"resource/js/js.js"
+			],
+			[
+				"abo",
+				"about.php"
+			],
+			[
+				"page",
+				"page.php"
+			],
+			[
+				"boot",
+				"bootstrap/css/bootstrap.css"
+			],
+			[
+				"js.",
+				"resource/js/js.js"
+			],
+			[
+				"j",
+				"bootstrap/js/bootstrap.min.js"
+			],
+			[
+				"boo",
+				"bootstrap/css/bootstrap.css"
+			],
+			[
+				"project",
+				"project.html"
+			],
+			[
+				"sty",
+				"css/style.css"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"defa",
+				"Bergen pharmacy_files/default.ultimate.css"
+			],
+			[
+				"style",
+				"index_files/a_data/style.css"
+			],
+			[
+				"a.ht",
+				"index_files/a.htm"
+			],
+			[
+				"styl",
+				"index_files/style.css"
+			],
+			[
+				"home",
+				"home.html"
+			],
+			[
+				"css.cs",
+				"resource/css/css.css"
+			],
+			[
+				"bootstra",
+				"bootstrap/css/bootstrap.css"
+			],
+			[
+				"css.css",
+				"resource/css/css.css"
+			],
+			[
+				"js.js",
+				"resource/js/peham.js"
+			],
+			[
+				"navba",
+				"resource/css/navbar.css"
+			],
+			[
+				"nav",
+				"resource/css/navbar.css"
+			],
+			[
+				"css.",
+				"resource/css/css.css"
+			],
+			[
+				".css",
+				"style.css"
+			],
+			[
+				"caln",
+				"calender.php"
+			],
+			[
+				"inpr",
+				"includes/inproject.php"
+			],
+			[
+				"addproj",
+				"addproject.php"
+			],
+			[
+				"add_me",
+				"add_meeting.php"
+			],
+			[
+				"sch",
+				"schedules.php"
+			],
+			[
+				"new",
+				"new.php"
+			],
+			[
+				"even",
+				"event.php"
+			],
+			[
+				"cal",
+				"calender.php"
+			],
+			[
+				"add_mee",
+				"add_meeting.php"
+			],
+			[
+				"mee",
+				"meeting.php"
+			],
+			[
+				"heade",
+				"header.php"
+			],
+			[
+				"ser",
+				"services.html"
+			],
+			[
+				"servic",
+				"services.html"
+			],
+			[
+				"about",
+				"about.html"
+			],
+			[
+				"serv",
+				"services.html"
+			],
+			[
+				"jque",
+				"resource/jquery.js"
+			],
+			[
+				"hom",
+				"home.html"
+			],
+			[
+				"home.ph",
+				"application/views/frontend/home.php"
+			],
+			[
+				"custo.js",
+				"incs/bootstrap/js/custom.js"
+			],
+			[
+				"home.php",
+				"application/views/frontend/home.php"
+			],
+			[
+				"fronten",
+				"incs/bootstrap/css/frontend.css"
+			],
+			[
+				"home.",
+				"application/views/frontend/home.php"
+			],
+			[
+				"settin",
+				"application/views/admin/settings/settings.php"
+			],
+			[
+				"admin_setting",
+				"application/models/admin_setting_model.php"
+			],
+			[
+				"admin_se",
+				"application/controllers/admin_settings.php"
+			],
+			[
+				"views/admin/",
+				"application/views/admin/welcome_message.php"
+			],
+			[
+				"views/admin/tem",
+				"application/views/admin/template.php"
+			],
+			[
+				"navbar",
+				"application/views/admin/navbar.php"
+			],
+			[
+				"admin/adm",
+				"application/views/admin/admins/admins.php"
+			],
+			[
+				"notes/no",
+				"application/views/admin/notes/notes.php"
+			],
+			[
+				"admin_notes",
+				"application/controllers/admin_notes.php"
+			],
+			[
+				"admin_",
+				"application/models/admin_notes_model.php"
+			],
+			[
+				"side",
+				"application/views/admin/blocks/sidebar1.php"
+			],
+			[
+				"admin_project",
+				"application/models/admin_projects_model.php"
+			],
+			[
+				"admin_pro",
+				"application/controllers/admin_projects.php"
+			],
+			[
+				"settings/sett",
+				"application/views/admin/settings/settings.php"
+			],
+			[
+				"header",
+				"application/views/admin/header.php"
+			],
+			[
+				"projects/",
+				"application/views/admin/projects/projects.php"
+			],
+			[
+				"shutter",
+				"incs/bg_slider/theme/supersized.shutter.css"
+			],
+			[
+				"frontend.c",
+				"incs/bootstrap/css/frontend.css"
+			],
+			[
+				"footer",
+				"application/views/frontend/footer.php"
+			],
+			[
+				"welcome_mode",
+				"application/models/welcome_model.php"
+			],
+			[
+				"modal",
+				"incs/modal/simple-modal.js"
+			],
+			[
+				"admin_sett",
+				"application/controllers/admin_settings.php"
+			],
+			[
+				"team/team",
+				"application/views/admin/team/team.php"
+			],
+			[
+				"team",
+				"application/controllers/admin_team.php"
+			],
+			[
+				"projects/proj",
+				"application/views/admin/projects/projects.php"
+			],
+			[
+				"front",
+				"incs/bootstrap/css/frontend.css"
+			],
+			[
+				"welc",
+				"application/controllers/welcome.php"
+			],
+			[
+				"frontend.",
+				"incs/bootstrap/css/frontend.css"
+			],
+			[
+				"admin/side",
+				"application/views/admin/blocks/sidebar1.php"
+			],
+			[
+				"slidbar.php",
+				"system/application/views/user/blocks/sidebar1.php"
+			],
+			[
+				"admin_pul",
+				"application/controllers/admin_publications.php"
+			],
+			[
+				"publication_",
+				"application/models/admin_publications_model.php"
+			],
+			[
+				"publi",
+				"application/controllers/publications.php"
+			],
+			[
+				"admin_proj",
+				"application/controllers/admin_projects.php"
+			],
+			[
+				"admin_projects_mo",
+				"application/models/admin_projects_model.php"
+			],
+			[
+				"head",
+				"application/views/frontend/header.php"
+			],
+			[
+				"welcome_mo",
+				"application/models/welcome_model.php"
+			],
+			[
+				"3.2.",
+				"incs/bg_slider/js/supersized.3.2.7.min.js"
+			],
+			[
+				"supersiz",
+				"incs/bg_slider/js/supersized.3.2.7.js"
+			],
+			[
+				"welcome_",
+				"application/models/welcome_model.php"
+			],
+			[
+				"newss",
+				"incs/bootstrap/js/newss.js"
+			],
+			[
+				"sup",
+				"incs/bg_slider/theme/supersized.shutter.js"
+			],
+			[
+				"supersize",
+				"incs/bg_slider/css/supersized.css"
+			],
+			[
+				"suprer",
+				"incs/bg_slider/theme/supersized.shutter.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"doc",
+				"/E/wamp/www/documents/documents.sublime-project"
+			],
+			[
+				"cknew",
+				"/E/wamp/www/cknew/Creative Key New.sublime-project"
+			],
+			[
+				"docu",
+				"/E/wamp/www/documents/documents.sublime-project"
+			],
+			[
+				"",
+				"/E/wamp/www/chat/chat_naqash.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 131.0,
+	"status_bar_visible": true
+}
