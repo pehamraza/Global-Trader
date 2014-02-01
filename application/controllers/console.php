@@ -287,7 +287,89 @@ class Console extends CI_Controller {
 	public function show_account_stock(){}
 	
 
+	public function update_session($goodId=NULL, $quantity=NULL, $type=NULL)
+	{
+		session_start();
+		// $this->session->unset_userdata('goods_owned');
 
+		$post = $this->input->post('post'); // checking if the values are posted or not
+		if(isset($post))
+			{
+				$goodId = $this->input->post('goodId');
+				$quantity = $this->input->post('quantity');
+				$type = $this->input->post('quantity'); // 0/1 => 0 is + and 1 is -
+			}
+
+		/// got vars till now /// asuming we have go all the vars
+
+		$new = array($goodId, $quantity); //make an array of new goods
+
+		if(isset($this->session->userdata('goods_owned'))) // if we have the session
+		{
+			$prev_gowned = $this->session->userdata('goods_owned'); // getting session array
+
+			// now foreach index of array we have to check whether the good is in session or not 
+
+			$c = count($prev_gowned); 
+			
+			for($a=0; $a<$c; $a++) /// traversing each index of array
+			{
+				if($prev_gowned[$c]['goodId']==$goodId) // if we have that item in session
+				{
+					$prev_gowned[$c]['goodId'] = $goodId;
+					if($type == 0) /// 0 is plus
+					{
+						$prev_gowned[$c]['quantity'] = (int)$prev_gowned[$c]['quantity'] +(int)$quantity;
+					}
+					else $prev_gowned[$c]['quantity'] = (int)$prev_gowned[$c]['quantity'] - (int)$quantity;
+						
+				}
+			}
+			
+		}
+		else{ // if no goods in session
+
+			// we got the goods put it in session
+			$new_values['goods_owned'][0] = $new;
+			$this->session->set_userdata($new_values);
+			}
+
+
+// if we already have id in session 
+// 	then update the q of that id
+
+// if we dont have the id in session 
+// 	then add the new array index and add the id, q
+
+
+		
+		
+		
+
+			 // number of goods in session lets say 2 -> 0,1 
+			if($c==NULL || $c=='' || $c==' ') {$c = 0;}
+			if($c>0)$c = $c-1;
+
+			$num = 0;
+			print_r($prev_gowned);
+			foreach($prev_gowned as $ownd)
+			{
+				$num++;
+				if($goodId == $ownd['goodId']) 
+					{	$q = (int)$quantity; $prev_q = (int)$ownd['quantity'];
+						if($type=='0'){$new_q = $q+$prev_q;} else $new_q = $prev_q-$q;
+						$set_it = $_SESSION['goods_owned'][$num]['quantity'] = $new_q;
+						$this->session->set_userdata($set_it);
+
+						$found = 1;
+					}
+			}
+		}
+		if($found === 1 || $prev_gowned==NULL)
+			{$sessio['goods_owned'][$c] = $goods_owned;
+						$this->session->set_userdata($sessio);
+	}
+	}
 
 }
 

@@ -43,6 +43,28 @@ var cblnc = Number($('.acc-blnc').html());
 	// var cblnc = Number($('.acc-blnc').html());
 	// if(cblnc<=0) $('.btn-buy').addClass('disabled');
 //checks end here
+
+	
+}
+
+function update_session(id, quantity)
+{
+	$.ajax({
+		url: '../../index.php/console/update_session',
+		type: 'post',
+		dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+		data: {post: 'value1', 'goodId': id, 'quantity': quantity},
+	})
+	.done(function() {
+		console.log("goods owned session updated");
+	})
+	.fail(function() {
+		console.log("error: goods owned session updated");
+	})
+	.always(function() {
+		console.log("complete: goods owned session updation request complete");
+	});
+	
 }
 
 function buychecks(id)
@@ -177,7 +199,12 @@ if(transaction_type=='Sell')
                     //reducing balance
                     blnc = blnc + Number(rate);
                     $('.acc-blnc').html(blnc);
-                     $('#q'+id).html(quantity-1);
+                    qunantity = quantity - 1;
+
+                     $('#q'+id).html(quantity);
+
+                     update_session(id, quantity);
+
 			        // $('#sell'+id).removeClass('disabled');
 
 }
@@ -191,7 +218,11 @@ else{
                     //reducing balance
                     blnc = blnc - rate;
                     $('.acc-blnc').html(blnc);
-			        $('#q'+id).html(quantity+1);
+			        $qunantity = quantity + 1;
+
+                     $('#q'+id).html(quantity);
+
+                     update_session(id, quantity);
 			        $('#sell'+id).removeClass('disabled');
 
 }
