@@ -28,7 +28,7 @@ var cblnc = Number($('.acc-blnc').html());
 			// console.log('#price'+a);
 			var name = $('#buy'+a).val();
 			if(price>cblnc) {
-				console.log(price+'>'+cblnc+' = '+' #buy'+a+' ('+name+') is disabled');
+				//console.log(price+'>'+cblnc+' = '+' #buy'+a+' ('+name+') is disabled');
 				$('#buy'+a).addClass('disabled');
 			}
 			else{$('#buy'+a).removeClass('disabled');}
@@ -47,19 +47,19 @@ var cblnc = Number($('.acc-blnc').html());
 	
 }
 
-function update_session(id, quantity)
+function update_session(id, quantity,type)
 {
 	$.ajax({
-		url: '../../index.php/console/update_session',
+		url: '../../console/update_session',
 		type: 'post',
 		dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
-		data: {post: 'value1', 'goodId': id, 'quantity': quantity},
+		data: {post: '1', 'goodId': id, 'quantity': quantity, 'type': type},
 	})
 	.done(function() {
 		console.log("goods owned session updated");
 	})
 	.fail(function() {
-		console.log("error: goods owned session updated");
+		console.log("error: goods owned session was not updated");
 	})
 	.always(function() {
 		console.log("complete: goods owned session updation request complete");
@@ -199,11 +199,11 @@ if(transaction_type=='Sell')
                     //reducing balance
                     blnc = blnc + Number(rate);
                     $('.acc-blnc').html(blnc);
-                    qunantity = quantity - 1;
-
+                    quantity = Number(quantity) - 1;
+                    // console.log('quantity before session:'+quantity)
                      $('#q'+id).html(quantity);
 
-                     update_session(id, quantity);
+                     update_session(id, quantity,'1');
 
 			        // $('#sell'+id).removeClass('disabled');
 
@@ -218,11 +218,11 @@ else{
                     //reducing balance
                     blnc = blnc - rate;
                     $('.acc-blnc').html(blnc);
-			        $qunantity = quantity + 1;
+			        quantity = Number(quantity) + 1;
 
                      $('#q'+id).html(quantity);
 
-                     update_session(id, quantity);
+                     update_session(id, quantity,'0');
 			        $('#sell'+id).removeClass('disabled');
 
 }
@@ -291,7 +291,7 @@ else{
                 }
             ]
         });
-        console.log('html: ' + n.options.id);
+        // console.log('html: ' + n.options.id);
     }
 
 

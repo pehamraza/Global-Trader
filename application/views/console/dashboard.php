@@ -111,13 +111,25 @@ function pinc()
 			if($account_balance<=$new_price){$class="disabled btn-default";}else $class=NULL;
 			// if()
 
+			$goods_owned = $this->session->userdata('goods_owned');
+			if($goods_owned!=FALSE){
+						foreach($goods_owned as $gowned)
+						{
+							if($good['goodId']==$gowned['goodId'])	
+							{
+								$goods_q = $gowned['quantity'];
+							}
+							else $goods_q = 0;
+						}
+						
+					}else $goods_q = 0;
 			?>
 
 
 
 			<tr><td><strong><?php echo $good['goodName']; ?></strong></td><td>$<span id="price<?php echo $good['goodId'];?>" class="new_price"><?php echo $new_price;?></span></td>
 				<td><button id="buy<?php echo $good['goodId']; ?>" price="<?php echo $new_price; ?>" value="<?php echo $good['goodName']; ?>" dbid="<?php echo $good['goodId']; ?>" name="btn-buy" class="btn btn-success btn-buy <?php echo $class;?>">Buy</button></td>
-				<td><span class="form-control quantity" id="q<?php echo $good['goodId']; ?>">0</span></td>
+				<td><span class="form-control quantity" id="q<?php echo  $good['goodId']; ?>"><?php echo $goods_q; ?></span></td>
 				<td><button id="sell<?php echo $good['goodId']; ?>" price="<?php echo $new_price; ?>" value="<?php echo $good['goodName']; ?>" dbid="<?php echo $good['goodId']; ?>" name="btn-sell" class="btn btn-primary btn-sell ">Sell</button></td>
 
 			</tr>
@@ -149,7 +161,7 @@ else{?>
 		<?php if(isset($goods)){
 			?>
 					
-					<div class="wagon"><h4 class="text-success">Wagon Capacity: <span id="bought_items">0</span> / <span class="wagon_capacity">100</span></h4></div>
+					<div class="wagon"><h4 class="text-success">Wagon Capacity: <span id="bought_items"><?php $g = $this->session->userdata('goods_owned'); $sum =0; foreach($g as $gg){$sum = $sum + $gg['quantity'];} echo $sum;?></span> / <span class="wagon_capacity">100</span></h4></div>
 					<div id="notycontainer">
 						
 					 </div>

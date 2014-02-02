@@ -295,81 +295,105 @@ class Console extends CI_Controller {
 		$post = $this->input->post('post'); // checking if the values are posted or not
 		if(isset($post))
 			{
-				$goodId = $this->input->post('goodId');
-				$quantity = $this->input->post('quantity');
-				$type = $this->input->post('quantity'); // 0/1 => 0 is + and 1 is -
+				// echo "goodId: ";
+				 $goodId = $this->input->post('goodId');
+				// echo "quantity: ";
+				 $quantity = $this->input->post('quantity');
+				// echo "type: ";
+				 $type = $this->input->post('type'); // 0/1 => 0 is + and 1 is -
 			}
 
 		/// got vars till now /// asuming we have go all the vars
 
-		$new = array($goodId, $quantity); //make an array of new goods
+		$new = array('goodId'=>$goodId, 'quantity'=>$quantity); //make an array of new goods
 
-		if(isset($this->session->userdata('goods_owned'))) // if we have the session
+		$goods_in_session = $this->session->userdata('goods_owned');
+		if($goods_in_session!=FALSE) // if we have the session
 		{
 			$prev_gowned = $this->session->userdata('goods_owned'); // getting session array
-
+			echo "array from session: ";print_r($prev_gowned);
 			// now foreach index of array we have to check whether the good is in session or not 
 
 			$c = count($prev_gowned); 
-			
+
 			for($a=0; $a<$c; $a++) /// traversing each index of array
-			{
-				if($prev_gowned[$c]['goodId']==$goodId) // if we have that item in session
+			{if(!array_key_exists($a, $prev_gowned))$a++;
+				echo "<br />inside loop: times:".$a."<br />";
+				// echo "<br /> checking if $prev_gowned\[".$a."]['goodId']".$prev_gowned[$a]['goodId']."==".$goodId."<br />";
+
+
+				if($prev_gowned[$a]['goodId']==$goodId) //---FINE// if we have that item in session
 				{
-					$prev_gowned[$c]['goodId'] = $goodId;
-					if($type == 0) /// 0 is plus
-					{
-						$prev_gowned[$c]['quantity'] = (int)$prev_gowned[$c]['quantity'] +(int)$quantity;
-					}
-					else $prev_gowned[$c]['quantity'] = (int)$prev_gowned[$c]['quantity'] - (int)$quantity;
-						
+					echo "found it<br />";
+					
+					$p_gowned['goods_owned'][$a]['goodId'] = $goodId;
+					$p_gowned['goods_owned'][$a]['quantity'] = $quantity;
+					echo "array ready to update: "; print_r($p_gowned);
+					$this->session->set_userdata($p_gowned);
+					// if($type == 0) /// 0 is plus
+					// {
+					// 	$prev_gowned[$c]['quantity'] = (int)$prev_gowned[$c]['quantity'] + (int)$quantity;
+					// }
+					// else $prev_gowned[$c]['quantity'] = (int)$prev_gowned[$c]['quantity'] - (int)$quantity;
 				}
+				else {$not_found = 1; //not found flag
+					echo "item not in session<br />";}
 			}
 			
+			if(isset($not_found))
+			{
+				$new_values[$c]['goodId'] = $new['goodId'];
+				$new_values[$c]['quantity'] = $new['quantity'];
+
+				// $new_values = array($new_values);
+				echo "New Values:"; print_r($new_values);
+
+				$previous_values = $prev_gowned;
+				echo "Previous Values:"; print_r($previous_values);
+
+
+				// $arr = array_push($previous_values, $new_values);
+				$arr = $previous_values + $new_values;
+				$ar['goods_owned'] = $arr;
+
+				$newish = $ar;
+				echo "Final array to update: ";
+				 print_r($newish);
+
+				$this->session->set_userdata($newish);	
+			}
 		}
-		else{ // if no goods in session
+		else{ // if no goods in session //---FINE
 
 			// we got the goods put it in session
 			$new_values['goods_owned'][0] = $new;
+			print_r($new_values);
 			$this->session->set_userdata($new_values);
 			}
 
-
-// if we already have id in session 
-// 	then update the q of that id
-
-// if we dont have the id in session 
-// 	then add the new array index and add the id, q
-
-
-		
-		
-		
-
-			 // number of goods in session lets say 2 -> 0,1 
-			if($c==NULL || $c=='' || $c==' ') {$c = 0;}
-			if($c>0)$c = $c-1;
-
-			$num = 0;
-			print_r($prev_gowned);
-			foreach($prev_gowned as $ownd)
-			{
-				$num++;
-				if($goodId == $ownd['goodId']) 
-					{	$q = (int)$quantity; $prev_q = (int)$ownd['quantity'];
-						if($type=='0'){$new_q = $q+$prev_q;} else $new_q = $prev_q-$q;
-						$set_it = $_SESSION['goods_owned'][$num]['quantity'] = $new_q;
-						$this->session->set_userdata($set_it);
-
-						$found = 1;
-					}
-			}
 		}
-		if($found === 1 || $prev_gowned==NULL)
-			{$sessio['goods_owned'][$c] = $goods_owned;
-						$this->session->set_userdata($sessio);
-	}
-	}
+
+		public function test()
+		{
+			$a = Array ( Array ( 'goodId' => 1, 'quantity' => 1 ) ,
+						 Array ( 'goodId' => 2, 'quantity' => 1 ) 
+					   ) ;
+			echo $a[0]['goodId'];
+			echo "<br />";
+			echo $a[1]['quantity'];
+
+		}
+
+
+		public function test2()
+		{
+			$a = $this->session->userdata('goods_owned');
+			echo $a[0]['goodId'];
+			echo "<br />";
+			echo $a[1]['goodId'];
+
+		}
+		
 
 }
 
