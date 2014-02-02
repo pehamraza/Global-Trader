@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"prev",
+				"previous_values"
+			],
+			[
+				"qu",
+				"quantity"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"new",
+				"new_values"
+			],
+			[
+				"not",
+				"not_found"
+			],
+			[
+				"prev_",
+				"prev_gowned"
+			],
+			[
+				"count",
+				"countryId"
+			],
+			[
+				"q",
+				"quantity"
+			],
+			[
+				"buy",
+				"buychecks"
+			],
+			[
+				"dis",
+				"disabled"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass"
+			],
+			[
 				"print",
 				"print_r"
 			],
@@ -264,10 +308,6 @@
 				"player_val"
 			],
 			[
-				"new",
-				"new_numbers"
-			],
-			[
 				"win",
 				"win_string"
 			],
@@ -444,10 +484,6 @@
 				"hiak_projects"
 			],
 			[
-				"qu",
-				"query"
-			],
-			[
 				"user",
 				"userdata"
 			],
@@ -478,76 +514,96 @@
 			[
 				"hiak_proj",
 				"hiak_project_images"
-			],
-			[
-				"inser",
-				"insert_id"
-			],
-			[
-				"ins",
-				"insert_id"
-			],
-			[
-				"tick",
-				"tickets"
-			],
-			[
-				"ticket_",
-				"ticket_post"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"tic",
-				"ticket_box"
-			],
-			[
-				"add_",
-				"add_ticket"
-			],
-			[
-				"comment_",
-				"comments_bottom"
-			],
-			[
-				"id",
-				"id"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "application/config/database.php",
+			"file": "application/controllers/console.php",
 			"settings":
 			{
-				"buffer_size": 3221,
+				"buffer_size": 10942,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "application/controllers/console.php",
+			"file": "/E/wamp/www/twitter/README.md",
 			"settings":
 			{
-				"buffer_size": 6487,
+				"buffer_size": 254,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/headscripts.php",
+			"settings":
+			{
+				"buffer_size": 711,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/console/dashboard.php",
+			"settings":
+			{
+				"buffer_size": 13421,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/noty-2.2.2/js/noty/packaged/jquery.noty.packaged.min.js",
+			"settings":
+			{
+				"buffer_size": 23491,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "resources/css/css.css",
 			"settings":
 			{
-				"buffer_size": 2018,
+				"buffer_size": 2797,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/noty-2.2.2/demo/buttons.css",
+			"settings":
+			{
+				"buffer_size": 10402,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/noty-2.2.2/demo/usingWithButtons.html",
+			"settings":
+			{
+				"buffer_size": 2519,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/js/js.js",
+			"settings":
+			{
+				"buffer_size": 8915,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/noty-2.2.2/demo/customContainer.html",
+			"settings":
+			{
+				"buffer_size": 2591,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "application/models/traders_model.php",
 			"settings":
 			{
-				"buffer_size": 1650,
+				"buffer_size": 2129,
 				"line_ending": "Windows"
 			}
 		},
@@ -556,14 +612,6 @@
 			"settings":
 			{
 				"buffer_size": 3768,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/console/dashboard.php",
-			"settings":
-			{
-				"buffer_size": 7100,
 				"line_ending": "Unix"
 			}
 		}
@@ -608,19 +656,24 @@
 	},
 	"file_history":
 	[
+		"/E/wamp/www/trader/README.md",
+		"/E/wamp/www/seza working perfect 30 12 2012/seza/add_news.php",
+		"/E/wamp/www/seza working perfect 30 12 2012/seza/albums.php",
+		"/E/wamp/www/twitter/README.md",
+		"/E/wamp/www/trader/resources/js/js.js",
+		"/E/wamp/www/trader/resources/noty-2.2.2/js/noty/packaged/jquery.noty.packaged.js",
+		"/E/wamp/www/trader/application/views/404.php",
+		"/E/wamp/www/trader/application/views/main.php",
+		"/E/wamp/www/trader/application/views/console/signup.php",
+		"/E/wamp/www/trader/application/views/console/login.php",
+		"/E/wamp/www/trader/application/views/console/message.php",
 		"/C/Users/DELL/AppData/Local/Temp/7zO5F8A.tmp/style.css",
 		"/E/wamp/www/trader/application/controllers/traders.php",
 		"/E/wamp/www/trader/application/views/console/dashboard.php",
-		"/E/wamp/www/trader/resources/js/js.js",
-		"/E/wamp/www/trader/application/views/console/login.php",
-		"/E/wamp/www/trader/application/views/console/message.php",
 		"/E/wamp/www/ak_web/application/controllers/clientarea.php",
 		"/E/wamp/www/trader/application/models/traders_model.php",
 		"/E/wamp/www/trader/map/demo_usa.html",
-		"/E/wamp/www/trader/application/views/main.php",
 		"/E/wamp/www/ak_web/application/controllers/user.php",
-		"/E/wamp/www/trader/application/views/console/signup.php",
-		"/E/wamp/www/trader/application/views/404.php",
 		"/E/wamp/www/trader/application/views/404.html",
 		"/E/wamp/www/trader/application/config/user_agents.php",
 		"/E/wamp/www/trader/application/config/constants.php",
@@ -730,16 +783,11 @@
 		"/C/Users/DELL/Desktop/Desktop/page_load_script/loading.gif",
 		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/User/FTPSync.sublime-settings",
 		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
-		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
-		"/C/Users/DELL/Desktop/Desktop/test2/resource/js/js.js",
-		"/C/Users/DELL/Desktop/Desktop/test2/index.html",
-		"/C/Users/DELL/Desktop/Desktop/test2/new.html",
-		"/C/Users/DELL/Desktop/Desktop/testt/examples/main.css",
-		"/C/Users/DELL/Desktop/Desktop/testt/new.html"
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings"
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 52.0
 	},
 	"find_in_files":
 	{
@@ -756,6 +804,42 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"[",
+			"console.log",
+			"foreach",
+			"count",
+			");\n",
+			"1200",
+			"dismissQueue: false",
+			"dismissQueue: true",
+			"value",
+			"id",
+			"checks",
+			"bank",
+			"dashboard",
+			"userdata",
+			"traders_model",
+			"cns",
+			"traders_model",
+			"auth",
+			"$this->load->model",
+			"$this->load->model('traders_model'",
+			"$this->load->model('traders_model','tmodel');",
+			"travel",
+			"account",
+			"btn-primary",
+			"btn-sell",
+			"Load",
+			"tt2",
+			"'warning'",
+			"success",
+			"ok",
+			"default",
+			"newp_",
+			"echo \" - \".",
+			"mod",
+			"(int)",
+			" fa-lg",
 			"goback",
 			"===",
 			"traders/",
@@ -847,43 +931,7 @@
 			"book you car",
 			"about",
 			"footer",
-			"mtab",
-			"border: 1px solid",
-			"menu",
-			"element",
-			"return_date",
-			"pickup_time",
-			"pickup_date",
-			" <input",
-			"htype",
-			"acity",
-			"car",
-			"location",
-			"name=\"",
-			"<input",
-			"input",
-			"selected=\"",
-			"location",
-			"name=\"",
-			"form",
-			"home",
-			"about",
-			"footer",
-			"start",
-			"offset",
-			" \"=\"\"",
-			" book",
-			"mytab",
-			"bg",
-			"bg ",
-			"bg",
-			"center",
-			"section",
-			"<hr>",
-			"myTab",
-			"title",
-			">",
-			"main"
+			"mtab"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -891,6 +939,8 @@
 		"regex": true,
 		"replace_history":
 		[
+			"dismissQueue: true",
+			"Loan",
 			"console/",
 			"message",
 			"console/signup/message",
@@ -1016,9 +1066,7 @@
 			".bg_img",
 			"$('.selected').removeClass('selected'); $(this).addClass('selected');",
 			"$(this).addClass('selected');",
-			"$(this).parent().addClass('selected');",
-			"news",
-			"publication"
+			"$(this).parent().addClass('selected');"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1029,49 +1077,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/config/database.php",
-					"settings":
-					{
-						"buffer_size": 3221,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2588,
-								2588
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 363.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "application/controllers/console.php",
 					"settings":
 					{
-						"buffer_size": 6487,
+						"buffer_size": 10942,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5135,
-								5135
+								9682,
+								9682
 							]
 						],
 						"settings":
@@ -1080,7 +1102,112 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2086.0,
+						"translation.y": 4542.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/E/wamp/www/twitter/README.md",
+					"settings":
+					{
+						"buffer_size": 254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								184,
+								184
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/views/headscripts.php",
+					"settings":
+					{
+						"buffer_size": 711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								619,
+								619
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 410.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/views/console/dashboard.php",
+					"settings":
+					{
+						"buffer_size": 13421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4461,
+								4461
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1320.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "resources/noty-2.2.2/js/noty/packaged/jquery.noty.packaged.min.js",
+					"settings":
+					{
+						"buffer_size": 23491,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1088,23 +1215,23 @@
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 5,
 					"file": "resources/css/css.css",
 					"settings":
 					{
-						"buffer_size": 2018,
+						"buffer_size": 2797,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2014,
-								2014
+								2529,
+								2529
 							]
 						],
 						"settings":
@@ -1112,25 +1239,136 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 182.0,
+						"translation.y": 845.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "application/models/traders_model.php",
+					"buffer": 6,
+					"file": "resources/noty-2.2.2/demo/buttons.css",
 					"settings":
 					{
-						"buffer_size": 1650,
+						"buffer_size": 10402,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1382,
-								1382
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "resources/noty-2.2.2/demo/usingWithButtons.html",
+					"settings":
+					{
+						"buffer_size": 2519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "resources/js/js.js",
+					"settings":
+					{
+						"buffer_size": 8915,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8773,
+								8773
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 433.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "resources/noty-2.2.2/demo/customContainer.html",
+					"settings":
+					{
+						"buffer_size": 2591,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1520,
+								1503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 714.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "application/models/traders_model.php",
+					"settings":
+					{
+						"buffer_size": 2129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1369,
+								1369
 							]
 						],
 						"settings":
@@ -1138,13 +1376,13 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 84.0,
-						"translation.y": 252.0,
+						"translation.y": 461.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 11,
 					"file": "jquery.avgrund.js-master/example/index.html",
 					"settings":
 					{
@@ -1165,34 +1403,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 915.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "application/views/console/dashboard.php",
-					"settings":
-					{
-						"buffer_size": 7100,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3214,
-								3214
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 832.0,
+						"translation.y": 971.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1228,7 +1439,7 @@
 		"cols":
 		[
 			0.0,
-			0.475708502024,
+			0.52995951417,
 			1.0
 		],
 		"rows":
@@ -1249,6 +1460,42 @@
 		"selected_items":
 		[
 			[
+				"css.c",
+				"resources/css/css.css"
+			],
+			[
+				"js.js",
+				"resources/js/js.js"
+			],
+			[
+				"packed.",
+				"resources/noty-2.2.2/js/noty/packaged/jquery.noty.packaged.js"
+			],
+			[
+				"2.2packed",
+				"resources/noty-2.2.2/js/noty/packaged/jquery.noty.packaged.min.js"
+			],
+			[
+				"404",
+				"application/views/404.php"
+			],
+			[
+				"main",
+				"application/views/main.php"
+			],
+			[
+				"signup",
+				"application/views/console/signup.php"
+			],
+			[
+				"login",
+				"application/views/console/login.php"
+			],
+			[
+				"message",
+				"application/views/console/message.php"
+			],
+			[
 				"dash",
 				"application/views/console/dashboard.php"
 			],
@@ -1259,26 +1506,6 @@
 			[
 				"appviewdash",
 				"application/views/console/dashboard.php"
-			],
-			[
-				"main",
-				"application/views/main.php"
-			],
-			[
-				"login",
-				"application/views/console/login.php"
-			],
-			[
-				"signup",
-				"application/views/console/signup.php"
-			],
-			[
-				"message",
-				"application/views/console/message.php"
-			],
-			[
-				"404",
-				"application/views/404.php"
 			],
 			[
 				"config",
@@ -1475,10 +1702,6 @@
 			[
 				"css.css",
 				"resource/css/css.css"
-			],
-			[
-				"js.js",
-				"resource/js/peham.js"
 			],
 			[
 				"navba",
@@ -1747,18 +1970,6 @@
 			[
 				"newss",
 				"incs/bootstrap/js/newss.js"
-			],
-			[
-				"sup",
-				"incs/bg_slider/theme/supersized.shutter.js"
-			],
-			[
-				"supersize",
-				"incs/bg_slider/css/supersized.css"
-			],
-			[
-				"suprer",
-				"incs/bg_slider/theme/supersized.shutter.css"
 			]
 		],
 		"width": 0.0

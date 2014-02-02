@@ -257,6 +257,10 @@ class Console extends CI_Controller {
 	}
 
 
+	function update_acc_blnc($amount)
+	{
+		$this->session->set_userdata('acc_blnc');
+	}
 
 	// load game details
 	public function get_continents(){}

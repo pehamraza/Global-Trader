@@ -137,7 +137,10 @@ $('#btn-loan').click(function(){
 });
 
 
+function update_acc_blnc(blnc)
+{
 
+}
 
 
 
@@ -199,6 +202,7 @@ if(transaction_type=='Sell')
                     //reducing balance
                     blnc = blnc + Number(rate);
                     $('.acc-blnc').html(blnc);
+                    update_acc_blnc(blnc);
                     quantity = Number(quantity) - 1;
                     // console.log('quantity before session:'+quantity)
                      $('#q'+id).html(quantity);
@@ -218,6 +222,7 @@ else{
                     //reducing balance
                     blnc = blnc - rate;
                     $('.acc-blnc').html(blnc);
+                    update_acc_blnc(blnc);
 			        quantity = Number(quantity) + 1;
 
                      $('#q'+id).html(quantity);

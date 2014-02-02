@@ -97,7 +97,19 @@ function pinc()
 					}
 
 	?>
-<h3>Goods in <strong><?php echo $coname; ?></strong></h3>
+
+<h3>Goods in <strong><?php echo $coname; 
+	$session_days = $this->session->userdata('no_of_days');
+	if($session_days!=FALSE)
+	{
+		$day_no = $session_days+1;
+		$nday['no_of_days'] = $day_no;
+		$this->session->set_userdata($nday);
+	}
+	else {$day_no = 1; $nday['no_of_days'] = $day_no; $this->session->set_userdata($nday);}
+?></strong>
+	<small>(Trading Day <span id="no_of_days"><?php echo $day_no; ?></span>)</small>
+</h3>
 	 <?php // print_r($countaries)?>
 	 <table class="table table-responsive table-striped">
 		<?php foreach($goods as $good){ 
@@ -161,7 +173,14 @@ else{?>
 		<?php if(isset($goods)){
 			?>
 					
-					<div class="wagon"><h4 class="text-success">Wagon Capacity: <span id="bought_items"><?php $g = $this->session->userdata('goods_owned'); $sum =0; foreach($g as $gg){$sum = $sum + $gg['quantity'];} echo $sum;?></span> / <span class="wagon_capacity">100</span></h4></div>
+					<div class="wagon"><h4 class="text-success">Wagon Capacity:
+					 <span id="bought_items">
+					 	<?php $g = $this->session->userdata('goods_owned');
+					 	 if($g!=FALSE)
+					 	 	{
+					 	 		$sum =0; foreach($g as $gg){$sum = $sum + (int)$gg['quantity'];} 
+					 	 		echo $sum;
+					 	 	} else echo '0';?></span> / <span class="wagon_capacity">100</span></h4></div>
 					<div id="notycontainer">
 						
 					 </div>
@@ -266,7 +285,9 @@ else{?>
 					</div>
 		<?php } ?>
 					<div class="statistics">
-						<h5>Account Balance: $<span class="acc-blnc" id="acc-blnc"><?php echo $this->session->userdata('acc_blnc'); ?></span></h5>
+						<h5>Account Balance: $<span class="acc-blnc" id="acc-blnc">
+								<?php echo $this->session->userdata('acc_blnc'); ?>
+							</span></h5>
 						<h5>Savings: $<span class="acc-savings" id="acc-savings"><?php echo $this->session->userdata('savings'); ?></span></h5>
 						<h5>Loan: $<span class="acc-loan" id="acc-loan"><?php echo $this->session->userdata('loan'); ?></span></h5>
 					</div>
