@@ -15,3 +15,12 @@
 
 /* End of file profiler.php */
 /* Location: ./application/config/profiler.php */
+
+$config['benchmarks']          = FALSE;
+$config['config']         = FALSE;
+$config['memory_usage']         = FALSE;
+$config['uri_string']         = FALSE;
+$config['get']         = FALSE;
+$config['http_headers']         = FALSE;
+$config['post']         = FALSE;
+$config['controller_info']         = FALSE;

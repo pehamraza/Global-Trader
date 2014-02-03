@@ -58,12 +58,15 @@
 									</div>
 									<div class="">
 										<input type="submit" name="login" value="Login" class="btn btn-default btn-md" />
-
-										<a href="<?php echo site_url() ?>/console/signup" class="pull-right padding-top-5">Don't have an Account? Signup</a>
+										<a  class="pull-right" href="">Forgot Password?</a>
 									</div>
+									
 								</form>
 							</div>
 						</div>
+						<div class="width-50 text-left signup_box_footer">
+										<a href="<?php echo site_url() ?>/console/signup" class=" padding-top-5">&raquo; Don't have an Account? Signup</a>			
+									</div>
 					
 				</div>
 				

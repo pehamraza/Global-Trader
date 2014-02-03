@@ -52,7 +52,6 @@ function update_session(id, quantity,type)
 	$.ajax({
 		url: '../../console/update_session',
 		type: 'post',
-		dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
 		data: {post: '1', 'goodId': id, 'quantity': quantity, 'type': type},
 	})
 	.done(function() {
@@ -61,9 +60,9 @@ function update_session(id, quantity,type)
 	.fail(function() {
 		console.log("error: goods owned session was not updated");
 	})
-	.always(function() {
-		console.log("complete: goods owned session updation request complete");
-	});
+	// .always(function() {
+	// 	console.log("complete: goods owned session updation request complete");
+	// });
 	
 }
 
@@ -139,7 +138,20 @@ $('#btn-loan').click(function(){
 
 function update_acc_blnc(blnc)
 {
-
+	$.ajax({
+		url: '../../console/update_acc_blnc/'+blnc,
+		type: 'POST',
+	})
+	.done(function() {
+		console.log("blnc update success");
+	})
+	.fail(function() {
+		console.log("blnc update error");
+	})
+	// .always(function() {
+	// 	console.log("blnc update complete");
+	// });
+	
 }
 
 

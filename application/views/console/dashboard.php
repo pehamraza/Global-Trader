@@ -103,8 +103,13 @@ function pinc()
 	if($session_days!=FALSE)
 	{
 		$day_no = $session_days+1;
-		$nday['no_of_days'] = $day_no;
-		$this->session->set_userdata($nday);
+		$this->session->set_userdata('no_of_days', $day_no);
+		$loan = $this->session->userdata('loan');
+		$new_loan = $this->session->userdata('new_loan');
+
+		echo $loan_p = $loan*(15/100);
+		$loan = floor($new_loan+$loan_p);
+		$this->session->set_userdata('new_loan',$loan);
 	}
 	else {$day_no = 1; $nday['no_of_days'] = $day_no; $this->session->set_userdata($nday);}
 ?></strong>
@@ -285,9 +290,12 @@ else{?>
 					</div>
 		<?php } ?>
 					<div class="statistics">
-						<h5>Account Balance: $<span class="acc-blnc" id="acc-blnc">
-								<?php echo $this->session->userdata('acc_blnc'); ?>
-							</span></h5>
+						<?php 
+							if($this->session->userdata('new_acc_blnc')!=FALSE) 
+							$acc_blnc = $this->session->userdata('new_acc_blnc');
+							else $acc_blnc =  $this->session->userdata('acc_blnc');
+						?>
+						<h5>Account Balance: $<span class="acc-blnc" id="acc-blnc"><?php echo $acc_blnc;  ?></span></h5>
 						<h5>Savings: $<span class="acc-savings" id="acc-savings"><?php echo $this->session->userdata('savings'); ?></span></h5>
 						<h5>Loan: $<span class="acc-loan" id="acc-loan"><?php echo $this->session->userdata('loan'); ?></span></h5>
 					</div>

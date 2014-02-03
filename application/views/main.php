@@ -75,6 +75,7 @@
 									</div>
 									<div class="">
 										<input type="submit" name="login" value="Login" class="btn btn-default btn-md" />
+										<a class="pull-right" href="">Forgot Password?</a>
 									</div>
 								</form>
 							</div>

@@ -81,3 +81,6 @@ text-transform: capitalize; font-size: 16px;}
  .wagon{margin: 25px auto 5px;}
  .wagon h4{margin: 0; padding: 0;}
  .bbank{margin-top: 0px; margin-bottom: 5px;}
+ .signup_box_footer{border-top: 1px solid #ddd;
+    padding: 5px;
+border-bottom: 5px solid #eee;}
