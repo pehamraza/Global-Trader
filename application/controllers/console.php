@@ -6,7 +6,7 @@ class Console extends CI_Controller {
 	{
 		parent::__construct();
 		// $this->load->model('traders_model','tmodel');
-		$this->output->enable_profiler(TRUE);
+		// $this->output->enable_profiler(TRUE);
 		$this->load->model('traders_model','tmodel');
 		
 	}
@@ -128,7 +128,7 @@ class Console extends CI_Controller {
 		// echo $stats;
 		$this->session->set_userdata($stats);
 		$data['stats'] = $stats;
-		if($this->check_login()) $this->load->view('console/dashboard', $data);
+		if($this->check_login()) $this->load->view('console/dashboard');
 		else $this->login_page();
 	}
 
@@ -148,7 +148,8 @@ class Console extends CI_Controller {
 		$data['countaries'] = $row;
 		$data['cname'] = $cname;
 		// $this->load->view('console/dashboard', $data);
-		$this->dashboard($data);
+		// $this->dashboard($data);
+		$this->load->view('console/dashboard', $data);
 
 	}
 
@@ -173,22 +174,12 @@ class Console extends CI_Controller {
 		$data['continentName'] = $cname;
 
 		$data['countries'] = $this->tmodel->get_countaries($cid);
-		// $row = &$row;
-		// for($a=0; $a<count($row); $a++)
-		// {
-		// 	echo $row[$a]['goodPrice']+$this->effect_prices();
-		// }
-
-		// foreach ($row as $r){
-		// 	$gp = $r['goodPrice'];
-		// 	 $gp = $gp+$this->effect_prices();
-		// }
-
+	
 		
 
-		$data['goods'] = &$row;
+		$data['goods'] = $row;
 		// $this->load->view('console/dashboard', $data);
-		$this->dashboard($data);
+		$this->load->view('console/dashboard', $data);
 
 	}
 

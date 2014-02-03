@@ -61,11 +61,14 @@
 
 		function get_statistics($id)
 		{
-			$q = $this->db->query("select * from trader_statistics where userId = '$id' order by statsId asc");
-				if($q->num_rows()>0){
-	            $row = $q->row_array();
+				$q = $this->db->query("select * from trader_statistics where userId = '$id' order by statsId asc");
+				
+				if($q->num_rows()>0)
+				{
+	            	$row = $q->row_array();
 	                return $row;
-	                }else return FALSE;
+	            }
+	            else return FALSE;
 		}
 
 		function set_stats($id){

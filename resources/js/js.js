@@ -139,10 +139,15 @@ function update_acc_blnc(blnc)
 	$.ajax({
 		url: '../../console/update_acc_blnc/'+blnc,
 		type: 'POST',
+		success: function(b)
+		{
+			console.log("($"+b+") blnc update success");
+			$('.acc-blnc').html(b);
+		}
 	})
-	.done(function() {
-		console.log("blnc update success");
-	})
+	// .done(function(b) {
+	// 	console.log("$"b+"blnc update success");
+	// })
 	.fail(function() {
 		console.log("blnc update error");
 	})
@@ -211,7 +216,7 @@ if(transaction_type=='Sell')
 
                     //reducing balance
                     blnc = blnc + Number(rate);
-                    $('.acc-blnc').html(blnc);
+                    
                     update_acc_blnc(blnc);
                     quantity = Number(quantity) - 1;
                     // console.log('quantity before session:'+quantity)
