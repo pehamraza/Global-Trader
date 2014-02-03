@@ -19,6 +19,7 @@ function checks(id)
 // else $('.btn-sell').removeClass('disabled');// opposite 2
 
 var cblnc = Number($('.acc-blnc').html());
+
 	// var qntity = Number($('#q'+id).html());
 	var a=1; var b = 10
 	for(a=1; a<b; a++)
@@ -100,10 +101,7 @@ function sellchecks(id)
 		// buychecks(id);sellchecks(id);
 		generate('div#notycontainer','Buy','success', 'You are Buying '+name+' at <h2 class="reduce_padding">$'+rate+'</h2>', 'topRight', name, rate, id);
 		// checks(id);
-		// buychecks(id);sellchecks(id);
-
-
-		
+		// buychecks(id);sellchecks(id);	
 	});
 
 
@@ -244,19 +242,7 @@ else{
 
 }
 //ENDS BUYING 
-
-
- // var blnc = $('.acc-blnc').html();
-	// 				blnc = Number(blnc);	
-
- //                    if(blnc<rate){ // checking balance and displaying message
- //                    	 $('#notycontainer').noty({dismissQueue: true,
- //                     force: false, layout: 'topCenter', 
- //                     theme: 'defaultTheme', 
- //                     text: 'Insufficient Balance',
- //                     type: 'error'});
- //                    }
-                    
+                   
                 }
                 },
                  {addClass: 'btn btn-info', text: transaction_type+' 10', onClick: function ($noty) {
