@@ -84,3 +84,4 @@ text-transform: capitalize; font-size: 16px;}
  .signup_box_footer{border-top: 1px solid #ddd;
     padding: 5px;
 border-bottom: 5px solid #eee;}
+.clear{clear:both; margin-top: 10px;}

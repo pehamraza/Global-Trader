@@ -99,16 +99,26 @@ function pinc()
 	?>
 
 <h3>Goods in <strong><?php echo $coname; 
+
+
+// DAYS COUNTING & LOAN CALCULATION
 	$session_days = $this->session->userdata('no_of_days');
 	if($session_days!=FALSE)
 	{
 		$day_no = $session_days+1;
 		$this->session->set_userdata('no_of_days', $day_no);
-		$loan = $this->session->userdata('loan');
-		$new_loan = $this->session->userdata('new_loan');
+		
+	if($this->session->userdata('new_loan')!=FALSE)
+		{
+			$loan = $this->session->userdata('new_loan');
+		}
+		else $loan = $this->session->userdata('loan');
 
-		echo $loan_p = $loan*(15/100);
-		$loan = floor($new_loan+$loan_p);
+		if($loan == FALSE) $loan = 250;
+		
+		$loan_p = $loan*(15/100);
+
+		$loan = floor($loan+$loan_p);
 		$this->session->set_userdata('new_loan',$loan);
 	}
 	else {$day_no = 1; $nday['no_of_days'] = $day_no; $this->session->set_userdata($nday);}
@@ -291,13 +301,23 @@ else{?>
 		<?php } ?>
 					<div class="statistics">
 						<?php 
-							if($this->session->userdata('new_acc_blnc')!=FALSE) 
-							$acc_blnc = $this->session->userdata('new_acc_blnc');
-							else $acc_blnc =  $this->session->userdata('acc_blnc');
+							$new_blnc = $this->session->userdata('new_acc_blnc');
+							$acc_blnc = $this->session->userdata('acc_blnc');
+							if($new_blnc!=FALSE) $acc_blnc = $this->session->userdata('new_acc_blnc');
+							else{
+									 	if($acc_blnc!=FALSE) $acc_blnc = $acc_blnc;
+										 else $acc_blnc = 150;
+									 }
+
+							 $saving = $this->session->userdata('savings');
+							 if($saving == FALSE) $saving = 0;
+
+							 // $loan = $this->session->userdata('loan');
+							 if($loan == FALSE) $loan = 250;
 						?>
 						<h5>Account Balance: $<span class="acc-blnc" id="acc-blnc"><?php echo $acc_blnc;  ?></span></h5>
-						<h5>Savings: $<span class="acc-savings" id="acc-savings"><?php echo $this->session->userdata('savings'); ?></span></h5>
-						<h5>Loan: $<span class="acc-loan" id="acc-loan"><?php echo $this->session->userdata('loan'); ?></span></h5>
+						<h5>Savings: $<span class="acc-savings" id="acc-savings"><?php echo $saving; ?></span></h5>
+						<h5>Loan: $<span class="acc-loan" id="acc-loan"><?php echo $loan ?></span></h5>
 					</div>
 
 		<?php if(isset($goods)){?>
@@ -314,8 +334,10 @@ else{?>
 						    <?php }?>
 						  </ul>
 						</div>
+
 						<!-- <button class="btn btn-default btn-lg" value="">Travel within Continent</button> -->
 					</div>
+					<div class="clear"><a href="" class="btn btn-primary">Stay for 1 more day in <?php echo $coname; ?></a></div>
 					<div id="notylog"></div>
 		<?php } ?>
 				</div>
@@ -340,6 +362,8 @@ else{?>
 
 		<div class="row footer">
 			<div class="col-md-12 col-lg-12">
+				<?php print_r($this->session->all_userdata()); ?>
+				<br />
 				<p>Copyright &copy; Global Trader 2014</p>
 			</div>
 		</div>

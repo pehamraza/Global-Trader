@@ -123,11 +123,11 @@ class Console extends CI_Controller {
 		session_start();
 		// $this->index();
 
-		$stats = $this->get_statistics();
+		// $stats = $this->get_statistics();
 		// print_r($stats);
 		// echo $stats;
-		$this->session->set_userdata($stats);
-		$data['stats'] = $stats;
+		// $this->session->set_userdata($stats);
+		// $data['stats'] = $stats;
 		if($this->check_login()) $this->load->view('console/dashboard');
 		else $this->login_page();
 	}
@@ -215,6 +215,8 @@ class Console extends CI_Controller {
 
 	function update_acc_blnc($amount)
 	{
+			// echo $this->session->userdata('new_acc_blnc');
+		$this->session->set_userdata('new_acc_blnc',$amount);
 		$this->session->set_userdata('new_acc_blnc',$amount);
 		echo $this->session->userdata('new_acc_blnc');
 	}

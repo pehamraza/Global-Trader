@@ -56,7 +56,7 @@ function update_session(id, quantity,type)
 		data: {post: '1', 'goodId': id, 'quantity': quantity, 'type': type},
 	})
 	.done(function() {
-		console.log("goods owned session updated");
+		console.log("quantity: "+quantity+" goods owned session updated");
 	})
 	.fail(function() {
 		console.log("error: goods owned session was not updated");
@@ -89,7 +89,7 @@ function sellchecks(id)
 	// checks(id);
 }
 
-/// buy
+/// buy and generate noty
 	$('.btn-buy').click(function() {
 		// buychecks(id);sellchecks(id);
 		
@@ -105,7 +105,7 @@ function sellchecks(id)
 	});
 
 
-/// sell
+/// buy and generate noty
 $('.btn-sell').click(function() {
 		// sellchecks(id);buychecks(id);
 		$('.btn-sell').preventDefault;
@@ -119,7 +119,7 @@ $('.btn-sell').click(function() {
 		// checks(id);
 	});
 
-
+//// BANK
 $('#btn-bank').click(function(){
 	$('#btn-bank').preventDefault;
 	$('#bankdiv').toggle(400);
@@ -127,6 +127,7 @@ $('#btn-bank').click(function(){
 });
 
 
+/// LOAN
 $('#btn-loan').click(function(){
 	$('#btn-loan').preventDefault;
 	$('#loandiv').toggle(400);
@@ -139,10 +140,11 @@ function update_acc_blnc(blnc)
 	$.ajax({
 		url: '../../console/update_acc_blnc/'+blnc,
 		type: 'POST',
+		cache: false,
 		success: function(b)
 		{
 			console.log("($"+b+") blnc update success");
-			$('.acc-blnc').html(b);
+			// update_acc_blnc(b);
 		}
 	})
 	// .done(function(b) {
@@ -157,6 +159,29 @@ function update_acc_blnc(blnc)
 	
 }
 
+function update_stats(blnc, savings, loan)
+{
+	if(blnc!=null && blnc!=false)
+		{
+			// update_acc_blnc(blnc);
+			$('.acc-blnc').html(blnc);
+		}
+		// else $('.acc-blnc').html('150');
+
+	if(savings!=null && savings!=false)
+		{
+			$('#acc-savings').html(blnc);
+		}
+		// else $('#acc-savings').html('0');
+
+	if(loan!=null && loan!=false)
+		{
+			$('.acc-loan').html(blnc);
+		}
+		// else $('.acc-loan').html('250');
+		
+		
+}
 
 
 function generate(container, transaction_type, type, message, layout, name, rate, id) {
@@ -216,13 +241,16 @@ if(transaction_type=='Sell')
 
                     //reducing balance
                     blnc = blnc + Number(rate);
-                    
-                    update_acc_blnc(blnc);
                     quantity = Number(quantity) - 1;
+                    update_session(id, quantity,'1');
+                    update_acc_blnc(blnc);
+                    savings = null; loan = null;
+                    update_stats(blnc, savings, loan);
+                    
                     // console.log('quantity before session:'+quantity)
                      $('#q'+id).html(quantity);
 
-                     update_session(id, quantity,'1');
+                     
 
 			        // $('#sell'+id).removeClass('disabled');
 
@@ -236,14 +264,17 @@ else{
 
                     //reducing balance
                     blnc = blnc - rate;
-                    $('.acc-blnc').html(blnc);
+                    // $('.acc-blnc').html(blnc);
+                    quantity = Number(quantity) + 1;
+                    update_session(id, quantity,'0');
+                    savings = null; loan = null;
                     update_acc_blnc(blnc);
-			        quantity = Number(quantity) + 1;
+                    update_stats(blnc, savings, loan);
 
+			         
                      $('#q'+id).html(quantity);
-
-                     update_session(id, quantity,'0');
-			        $('#sell'+id).removeClass('disabled');
+					 
+					 $('#sell'+id).removeClass('disabled');
 
 }
 //ENDS BUYING 
