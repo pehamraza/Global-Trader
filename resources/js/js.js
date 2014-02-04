@@ -4,7 +4,7 @@ $(document).ready(function($) {
 	var btnId = $('.btn-buy').attr('id');
 	$('#bankdiv').hide();
 	$('#loandiv').hide();
-checks();
+// checks();
 
 // CHECKS
 function checks(id)
@@ -51,12 +51,12 @@ var cblnc = Number($('.acc-blnc').html());
 function update_session(id, quantity,type)
 {
 	$.ajax({
-		url: '../../console/update_session',
-		type: 'post',
-		data: {post: '1', 'goodId': id, 'quantity': quantity, 'type': type},
+		url: '../../console/update_session/'+id+'/'+quantity+'/'+type,
+		// type: 'post',
+		// data: {post: '1', 'goodId': id, 'quantity': quantity, 'type': type},
 	})
 	.done(function() {
-		console.log("quantity: "+quantity+" goods owned session updated");
+		console.log("quantity: "+update_session+" goods owned session updated");
 	})
 	.fail(function() {
 		console.log("error: goods owned session was not updated");
@@ -192,8 +192,7 @@ previous = Number(previous);
 var blnc = $('.acc-blnc').html();
 blnc = Number(blnc);	
 
-var quantity = $('#q'+id).html();
-quantity = Number(quantity);
+
 
 if(transaction_type=='Sell')tt2='Sold'; else tt2 = 'Bought';
 	
@@ -236,6 +235,8 @@ if(transaction_type=='Sell')tt2='Sold'; else tt2 = 'Bought';
 //START SELLING
 if(transaction_type=='Sell')
 {
+	var quantity = $('#q'+id).html();
+quantity = Number(quantity);
                     //wagon
                     $('#bought_items').html(previous-1);
 
@@ -261,11 +262,13 @@ if(transaction_type=='Sell')
 else{
                     //wagon
                     $('#bought_items').html(previous+1);
-
+var quantity = $('#q'+id).html();
+quantity = Number(quantity);
                     //reducing balance
                     blnc = blnc - rate;
                     // $('.acc-blnc').html(blnc);
                     quantity = Number(quantity) + 1;
+                    alert(quantity);
                     update_session(id, quantity,'0');
                     savings = null; loan = null;
                     update_acc_blnc(blnc);

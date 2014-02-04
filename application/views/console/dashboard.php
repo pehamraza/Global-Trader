@@ -127,9 +127,9 @@ function pinc()
 </h3>
 	 <?php // print_r($countaries)?>
 	 <table class="table table-responsive table-striped">
-		<?php foreach($goods as $good){ 
-			
-
+		<?php $num = 0; 
+		foreach($goods as $good)
+		{ $num++;
 			// echo $var;
 			$new_price = $good['goodPrice']+pinc(); 
 			$new_price = abs($new_price); 
@@ -139,17 +139,21 @@ function pinc()
 			// if()
 
 			$goods_owned = $this->session->userdata('goods_owned');
-			if($goods_owned!=FALSE){
+			if($goods_owned!=FALSE)
+					{
 						foreach($goods_owned as $gowned)
 						{
 							if($good['goodId']==$gowned['goodId'])	
 							{
+								$found = $good['goodId'];
+								$found_qunatity = $gowned['quantity'];
 								$goods_q = $gowned['quantity'];
 							}
-							else $goods_q = 0;
+							else{ $goods_q = 0; $found_qunatity = "no"; $found = "no";}
 						}
 						
-					}else $goods_q = 0;
+					}
+					// else $goods_q = 0;
 			?>
 
 
@@ -158,7 +162,7 @@ function pinc()
 				<td><button id="buy<?php echo $good['goodId']; ?>" price="<?php echo $new_price; ?>" value="<?php echo $good['goodName']; ?>" dbid="<?php echo $good['goodId']; ?>" name="btn-buy" class="btn btn-success btn-buy <?php echo $class;?>">Buy</button></td>
 				<td><span class="form-control quantity" id="q<?php echo  $good['goodId']; ?>"><?php echo $goods_q; ?></span></td>
 				<td><button id="sell<?php echo $good['goodId']; ?>" price="<?php echo $new_price; ?>" value="<?php echo $good['goodName']; ?>" dbid="<?php echo $good['goodId']; ?>" name="btn-sell" class="btn btn-primary btn-sell ">Sell</button></td>
-
+				<td class="span">Loop: <?=$num?> found Id = <?=$found?> quantity: <?=$found_qunatity?></td>	
 			</tr>
 		<?php }?>
 	</table>
