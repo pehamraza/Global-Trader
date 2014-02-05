@@ -153,18 +153,11 @@ function pinc()
 								// echo $found_qunatity;
 								// $this->session->set_userdata('quantity_mess',$gowned['quantity']);
 								// echo "<br />loop: ".$loop." found id ".$gowned['goodId']." with quantity".$gowned['quantity']."<br />";
-								$NO = 0;
 							}
 							
 						}
-
-						 //if($NO==1){ $found_qunatity=0;}
-						
 					}
-					// else $quantity_mess = 0;
-					//else if($goods_owned==FALSE){ $found_qunatity=0;}
-
-					$oloop++;
+					// $oloop++;
 					 // echo " Outer Loop: ".$oloop." quantity: ".$found_qunatity."<br />";
 			?>
 
