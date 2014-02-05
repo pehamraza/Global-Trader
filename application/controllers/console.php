@@ -272,7 +272,7 @@ class Console extends CI_Controller {
 		// 	}
 
 
-			echo $goodId; echo $quantity;
+			// -------------------echo $goodId; echo $quantity;
 		/// got vars till now /// asuming we have go all the vars
 
 		$new = array('goodId'=>$goodId, 'quantity'=>$quantity); //make an array of new goods
@@ -281,26 +281,27 @@ class Console extends CI_Controller {
 		if($prev_gowned!=FALSE) // if we have the session
 		{
 			// $prev_gowned = $this->session->userdata('goods_owned'); // getting session array
-			echo "array from session: ";
-			print_r($prev_gowned);
+			// -------------------echo "array from session: ";
+			// -------------------print_r($prev_gowned);
 			// now foreach index of array we have to check whether the good is in session or not 
 
-			echo "<br />count".$c = count($prev_gowned); 
+			// -------------------echo "<br />count".
+			$c = count($prev_gowned); 
 			static $FOUND = 0;
 			for($a=0; $a<$c; $a++) /// traversing each index of array
 			{
 				if(!array_key_exists($a, $prev_gowned))$a++;
-				echo "<br />inside loop: times:".$a."<br />";
+				// -------------------echo "<br />inside loop: times:".$a."<br />";
 				// echo "<br /> checking if $prev_gowned\[".$a."]['goodId']".$prev_gowned[$a]['goodId']."==".$goodId."<br />";
 
 
 				if($prev_gowned[$a]['goodId']===$goodId) //---FINE// if we have that item in session
 				{
-					echo "found it on index $a<br /> ";
+					// -------------------echo "found it on index $a<br /> ";
 					
 					$prev_gowned[$a]['goodId'] = $goodId;
 					$prev_gowned[$a]['quantity'] = $quantity;
-					echo "array ready to update: "; print_r($prev_gowned);
+					// -------------------echo "array ready to update: "; print_r($prev_gowned);
 					$this->session->set_userdata('goods_owned',$prev_gowned);
 					// if($type == 0) /// 0 is plus
 					// {
@@ -314,36 +315,33 @@ class Console extends CI_Controller {
 
 			if($FOUND!=1)
 			{
-				echo 'NOT FOUND';
+				// -------------------echo 'NOT FOUND';
 				$new_values[$c]['goodId'] = $new['goodId'];
 				$new_values[$c]['quantity'] = $new['quantity'];
 
 				// $new_values = array($new_values);
-				echo "<br /><br />New Values:"; print_r($new_values);
+				// -------------------echo "<br /><br />New Values:"; print_r($new_values);
 
 				$previous_values = $prev_gowned;
-				echo "<br /><br />Previous Values:"; print_r($previous_values);
+				// -------------------echo "<br /><br />Previous Values:"; print_r($previous_values);
 
-// $prev_gowned = array_merge($new_values, $prev_gowned);
-// echo "<br />------------------";
-// print_r($prev_gowned);
-// echo "------------------<br />";
+				// $prev_gowned = array_merge($new_values, $prev_gowned);
+				// echo "<br />------------------";
+				// print_r($prev_gowned);
+				// echo "------------------<br />";
 				// $arr = array_push($previous_values, $new_values);
 				$arr = array_merge($previous_values,$new_values);
-				$ar['goods_owned'] = $arr;
+				// -------------------echo "<br /><br />Final array to update: ";
+				 // -------------------print_r($newish);
 
-				$newish = $ar;
-				echo "<br /><br />Final array to update: ";
-				 print_r($newish);
-
-				$this->session->set_userdata($newish);	
+				$this->session->set_userdata('goods_owned',$arr);	
 			}
 		}
 		else{ // if no goods in session //---FINE
 
 			// we got the goods put it in session
 			$new_values['goods_owned'][0] = $new;
-			print_r($new_values);
+			// -------------------print_r($new_values);
 			$this->session->set_userdata($new_values);
 			}
 

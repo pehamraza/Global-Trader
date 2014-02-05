@@ -5,7 +5,11 @@
 		[
 			[
 				"prev",
-				"previous_values"
+				"prev_gowned"
+			],
+			[
+				"goo",
+				"goodId"
 			],
 			[
 				"qu",
@@ -510,10 +514,6 @@
 			[
 				"myMo",
 				"myModal"
-			],
-			[
-				"hiak_proj",
-				"hiak_project_images"
 			]
 		]
 	},
@@ -523,47 +523,46 @@
 			"file": "application/controllers/console.php",
 			"settings":
 			{
-				"buffer_size": 10942,
+				"buffer_size": 10430,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/E/wamp/www/twitter/README.md",
-			"settings":
-			{
-				"buffer_size": 254,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "application/views/headscripts.php",
-			"settings":
-			{
-				"buffer_size": 711,
-				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "application/views/console/dashboard.php",
 			"settings":
 			{
-				"buffer_size": 13421,
+				"buffer_size": 15419,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/noty-2.2.2/js/noty/packaged/jquery.noty.packaged.min.js",
+			"contents": "item => id, quantity, rate\n\n--------------------------------------------\ntransaction ->\n\n		buy ->  check balanc()\n					if(sufficient balan)\n						{\n							deduct balance() \n							update session()\n							update stats view()\n							update database()\n						}\n						else{\n								disable buttons()\n								don't begin transaction\n							}\n\n		sell ->\n				check goods bought()\n				if(got goods)\n					{\n						enable sell buttons()\n						update balance()\n						update session()\n						update stats view()\n						update database()\n					}\n					else{\n							disable sell buttons()\n						}\n\n--------------------------------------------\ntravel ->\n		change day number()\n		update session()\n		update loan amount()\n		update savings()\n		update view()\n\n--------------------------------------------\nbank ->\n		deposit ->\n			check balanc()\n			if(have balance)\n				{\n					update session()\n					update database()\n					update view()\n				}\n		\n		withdraw ->\n				{\n					check savings()\n					if(savings)\n						{\n							update session()\n							update database()		\n							update stats()\n							update view()\n						}\n				}\n--------------------------------------------\n\nloan ->\n		if(got loan for more than 10k not returned for 5+ days)\n			disable loan button()\n\n		if(loan less than 5k)\n			{\n				give loan()\n				update session()\n				update database()\n				update stats view()\n			}\n--------------------------------------------\n\nstore ->\n		get store ids from database randomly & random quantity()\n		\n		buy() ->\n			if(got money)\n				{\n					update session()\n					update databse()\n					show effect()\n					update view()\n				}\n			else disable buttons()\n--------------------------------------------\n\nbonuses ->\n		get random bonus from database()\n		show display message on travel()\n		show effect()\n		update stats()\n		update view()\n--------------------------------------------\n\nscore board ->\n		update score board ()\n		update database()\n--------------------------------------------\n\nsave game ->\n		update database()\n--------------------------------------------\n\nload game ->\n		load database()\n		load views()\n--------------------------------------------",
+			"file": "function guide.txt",
+			"file_size": 2217,
+			"file_write_time": 130358983898092887,
 			"settings":
 			{
-				"buffer_size": 23491,
+				"buffer_size": 2106,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "complete views \nfunction game on views()\n\ncomplete sessions\nfunction game with session()\n\ncomplete database\nfunction game with database()",
+			"file": "steps",
+			"file_size": 144,
+			"file_write_time": 130358983803267463,
+			"settings":
+			{
+				"buffer_size": 137,
+				"line_ending": "Windows",
+				"name": "complete views"
 			}
 		},
 		{
 			"file": "resources/css/css.css",
 			"settings":
 			{
-				"buffer_size": 2797,
+				"buffer_size": 2933,
 				"line_ending": "Windows"
 			}
 		},
@@ -587,7 +586,7 @@
 			"file": "resources/js/js.js",
 			"settings":
 			{
-				"buffer_size": 8915,
+				"buffer_size": 9776,
 				"line_ending": "Windows"
 			}
 		},
@@ -603,7 +602,7 @@
 			"file": "application/models/traders_model.php",
 			"settings":
 			{
-				"buffer_size": 2129,
+				"buffer_size": 2151,
 				"line_ending": "Windows"
 			}
 		},
@@ -611,8 +610,8 @@
 			"file": "jquery.avgrund.js-master/example/index.html",
 			"settings":
 			{
-				"buffer_size": 3768,
-				"line_ending": "Unix"
+				"buffer_size": 0,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -656,16 +655,19 @@
 	},
 	"file_history":
 	[
+		"/E/wamp/www/trader/application/views/headscripts.php",
+		"/E/wamp/www/trader/resources/noty-2.2.2/js/noty/packaged/jquery.noty.packaged.min.js",
+		"/E/wamp/www/trader/application/views/main.php",
+		"/E/wamp/www/trader/application/views/console/login.php",
+		"/E/wamp/www/trader/application/config/profiler.php",
+		"/E/wamp/www/twitter/README.md",
 		"/E/wamp/www/trader/README.md",
 		"/E/wamp/www/seza working perfect 30 12 2012/seza/add_news.php",
 		"/E/wamp/www/seza working perfect 30 12 2012/seza/albums.php",
-		"/E/wamp/www/twitter/README.md",
 		"/E/wamp/www/trader/resources/js/js.js",
 		"/E/wamp/www/trader/resources/noty-2.2.2/js/noty/packaged/jquery.noty.packaged.js",
 		"/E/wamp/www/trader/application/views/404.php",
-		"/E/wamp/www/trader/application/views/main.php",
 		"/E/wamp/www/trader/application/views/console/signup.php",
-		"/E/wamp/www/trader/application/views/console/login.php",
 		"/E/wamp/www/trader/application/views/console/message.php",
 		"/C/Users/DELL/AppData/Local/Temp/7zO5F8A.tmp/style.css",
 		"/E/wamp/www/trader/application/controllers/traders.php",
@@ -780,14 +782,11 @@
 		"/C/Users/DELL/Desktop/Desktop/page_load_script/big_image.jpg",
 		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/FTPSync/FTPSync.sublime-settings",
 		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/FTPSync/Default (Windows).sublime-keymap",
-		"/C/Users/DELL/Desktop/Desktop/page_load_script/loading.gif",
-		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/User/FTPSync.sublime-settings",
-		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
-		"/C/Users/DELL/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings"
+		"/C/Users/DELL/Desktop/Desktop/page_load_script/loading.gif"
 	],
 	"find":
 	{
-		"height": 52.0
+		"height": 65.0
 	},
 	"find_in_files":
 	{
@@ -804,6 +803,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"quantity_mess",
+			"goods_q",
+			"session_start();",
+			"session_start()",
+			"session_start();",
+			"update",
+			"update_session",
+			"day",
+			"day ",
+			"day",
+			"ac_bl",
+			"ac_bl_new",
+			"$ac2",
+			"ac_bl_new2",
+			"$ac",
+			"ac",
+			"loan",
+			"statistics",
+			"$goods",
+			"dashboard",
+			"150",
 			"[",
 			"console.log",
 			"foreach",
@@ -910,35 +930,15 @@
 			"jpg\"></a></span>",
 			"</a></span>",
 			"pehamraza@gmail.com",
-			"r_m",
-			"r_r_e",
-			"email",
-			"r_r_e",
-			"cell",
-			"r_r_n",
-			"name",
-			"Name",
-			"name",
-			"name=\"",
-			"tab-pane",
-			"resource/images/cars/xli.jpg",
-			"class=\"",
-			"heading",
-			"rel=\"lightbox\"",
-			" class=\"",
-			"<div class=\"col-md-4\">",
-			"book your",
-			"book you car",
-			"about",
-			"footer",
-			"mtab"
+			"r_m"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"//session_start();",
 			"dismissQueue: true",
 			"Loan",
 			"console/",
@@ -1065,8 +1065,7 @@
 			"class=\"bg_img\"",
 			".bg_img",
 			"$('.selected').removeClass('selected'); $(this).addClass('selected');",
-			"$(this).addClass('selected');",
-			"$(this).parent().addClass('selected');"
+			"$(this).addClass('selected');"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1077,7 +1076,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1085,15 +1084,42 @@
 					"file": "application/controllers/console.php",
 					"settings":
 					{
-						"buffer_size": 10942,
+						"buffer_size": 10430,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9682,
-								9682
+								8652,
+								8652
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 39.0,
+						"translation.y": 4590.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/views/console/dashboard.php",
+					"settings":
+					{
+						"buffer_size": 15419,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5609,
+								5609
 							]
 						],
 						"settings":
@@ -1102,30 +1128,32 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4542.0,
+						"translation.y": 2397.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/E/wamp/www/twitter/README.md",
+					"buffer": 2,
+					"file": "function guide.txt",
 					"settings":
 					{
-						"buffer_size": 254,
+						"buffer_size": 2106,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								184,
-								184
+								197,
+								197
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1134,77 +1162,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "application/views/headscripts.php",
-					"settings":
-					{
-						"buffer_size": 711,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								619,
-								619
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 410.0,
-						"translation.y": 42.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "application/views/console/dashboard.php",
+					"file": "steps",
 					"settings":
 					{
-						"buffer_size": 13421,
+						"buffer_size": 137,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4461,
-								4461
+								137,
+								137
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1320.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "resources/noty-2.2.2/js/noty/packaged/jquery.noty.packaged.min.js",
-					"settings":
-					{
-						"buffer_size": 23491,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"auto_name": "complete views",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1215,28 +1191,30 @@
 			]
 		},
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "resources/css/css.css",
 					"settings":
 					{
-						"buffer_size": 2797,
+						"buffer_size": 2933,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2529,
-								2529
+								2932,
+								2932
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 845.0,
@@ -1245,7 +1223,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "resources/noty-2.2.2/demo/buttons.css",
 					"settings":
 					{
@@ -1273,7 +1251,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "resources/noty-2.2.2/demo/usingWithButtons.html",
 					"settings":
 					{
@@ -1301,19 +1279,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"file": "resources/js/js.js",
 					"settings":
 					{
-						"buffer_size": 8915,
+						"buffer_size": 9776,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8773,
-								8773
+								156,
+								156
 							]
 						],
 						"settings":
@@ -1322,13 +1300,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 433.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 8,
 					"file": "resources/noty-2.2.2/demo/customContainer.html",
 					"settings":
 					{
@@ -1356,37 +1334,37 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 9,
 					"file": "application/models/traders_model.php",
 					"settings":
 					{
-						"buffer_size": 2129,
+						"buffer_size": 2151,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1369,
-								1369
+								1448,
+								1448
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
-						"translation.x": 84.0,
-						"translation.y": 461.0,
+						"translation.x": 0.0,
+						"translation.y": 84.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 10,
 					"file": "jquery.avgrund.js-master/example/index.html",
 					"settings":
 					{
-						"buffer_size": 3768,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -1439,7 +1417,7 @@
 		"cols":
 		[
 			0.0,
-			0.52995951417,
+			0.629554655871,
 			1.0
 		],
 		"rows":
@@ -1459,6 +1437,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"css.css",
+				"resources/css/css.css"
+			],
+			[
+				"profile",
+				"application/config/profiler.php"
+			],
+			[
+				"login",
+				"application/views/console/login.php"
+			],
+			[
+				"main.",
+				"application/views/main.php"
+			],
 			[
 				"css.c",
 				"resources/css/css.css"
@@ -1486,10 +1480,6 @@
 			[
 				"signup",
 				"application/views/console/signup.php"
-			],
-			[
-				"login",
-				"application/views/console/login.php"
 			],
 			[
 				"message",
@@ -1698,10 +1688,6 @@
 			[
 				"bootstra",
 				"bootstrap/css/bootstrap.css"
-			],
-			[
-				"css.css",
-				"resource/css/css.css"
 			],
 			[
 				"navba",
@@ -1962,14 +1948,6 @@
 			[
 				"supersiz",
 				"incs/bg_slider/js/supersized.3.2.7.js"
-			],
-			[
-				"welcome_",
-				"application/models/welcome_model.php"
-			],
-			[
-				"newss",
-				"incs/bootstrap/js/newss.js"
 			]
 		],
 		"width": 0.0

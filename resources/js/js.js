@@ -4,22 +4,12 @@ $(document).ready(function($) {
 	var btnId = $('.btn-buy').attr('id');
 	$('#bankdiv').hide();
 	$('#loandiv').hide();
-// checks();
+checks();
 
 // CHECKS
 function checks(id)
 {
-// 1. if balance is 0 you can't buy
-
-// else $('.btn-buy').removeClass('disabled'); // opposite 1
-
-//2. if bought items are zero then sell button is disabled
-// var cquantity = Number($('.quantity').html());
-// if(cquantity==0) $('.btn-sell').addClass('disabled');
-// else $('.btn-sell').removeClass('disabled');// opposite 2
-
-var cblnc = Number($('.acc-blnc').html());
-
+	var cblnc = Number($('.acc-blnc').html());
 	// var qntity = Number($('#q'+id).html());
 	var a=1; var b = 10
 	for(a=1; a<b; a++)
@@ -28,13 +18,17 @@ var cblnc = Number($('.acc-blnc').html());
 			var quantity = Number($('#q'+a).html());
 			// console.log('#price'+a);
 			var name = $('#buy'+a).val();
-			if(price>cblnc) {
+			if(price>cblnc) 
+			{
 				//console.log(price+'>'+cblnc+' = '+' #buy'+a+' ('+name+') is disabled');
 				$('#buy'+a).addClass('disabled');
 			}
 			else{$('#buy'+a).removeClass('disabled');}
 
-			if(quantity==0) $('#sell'+a).addClass('disabled');
+			if(quantity==0) 
+				{
+					$('#sell'+a).addClass('disabled');
+				}
 		}
 	
 	if(cblnc<=0) $('#buy'+id).addClass('disabled');
@@ -56,7 +50,7 @@ function update_session(id, quantity,type)
 		// data: {post: '1', 'goodId': id, 'quantity': quantity, 'type': type},
 	})
 	.done(function() {
-		console.log("quantity: "+update_session+" goods owned session updated");
+		console.log("quantity: "+quantity+" goods owned session updated");
 	})
 	.fail(function() {
 		console.log("error: goods owned session was not updated");

@@ -127,7 +127,7 @@ function pinc()
 </h3>
 	 <?php // print_r($countaries)?>
 	 <table class="table table-responsive table-striped">
-		<?php $num = 0; 
+		<?php $num = 0; $oloop=0; static $NO = 1;
 		foreach($goods as $good)
 		{ $num++;
 			// echo $var;
@@ -140,29 +140,38 @@ function pinc()
 
 			$goods_owned = $this->session->userdata('goods_owned');
 			if($goods_owned!=FALSE)
-					{
+					{$loop=0;
 						foreach($goods_owned as $gowned)
-						{
-							if($good['goodId']==$gowned['goodId'])	
+						{$loop++;
+							if($good['goodId']===$gowned['goodId'])	
 							{
-								$found = $good['goodId'];
-								$found_qunatity = $gowned['quantity'];
-								$goods_q = $gowned['quantity'];
-							}
-							else{ $goods_q = 0; $found_qunatity = "no"; $found = "no";}
+								echo "<br />".$good['goodId']."==".$gowned['goodId'];
+								// $found = $good['goodId'];
+								echo $found_qunatity = $gowned['quantity'];
+								// $this->session->set_userdata('quantity_mess',$gowned['quantity']);
+								// echo "<br />loop: ".$loop." found id ".$gowned['goodId']." with quantity".$gowned['quantity']."<br />";
+								$NO = 0;
+							}else{ $found_qunatity=0;}
+							
 						}
+
+						 if($NO==1){ $found_qunatity=0;}
 						
 					}
-					// else $goods_q = 0;
+					// else $quantity_mess = 0;
+					else if($goods_owned==FALSE){ $found_qunatity=0;}
+
+					$oloop++;
+					 echo " Outer Loop: ".$oloop." quantity: ".$found_qunatity."<br />";
 			?>
 
 
 
 			<tr><td><strong><?php echo $good['goodName']; ?></strong></td><td>$<span id="price<?php echo $good['goodId'];?>" class="new_price"><?php echo $new_price;?></span></td>
 				<td><button id="buy<?php echo $good['goodId']; ?>" price="<?php echo $new_price; ?>" value="<?php echo $good['goodName']; ?>" dbid="<?php echo $good['goodId']; ?>" name="btn-buy" class="btn btn-success btn-buy <?php echo $class;?>">Buy</button></td>
-				<td><span class="form-control quantity" id="q<?php echo  $good['goodId']; ?>"><?php echo $goods_q; ?></span></td>
+				<td><span class="form-control quantity" id="q<?php echo  $good['goodId']; ?>"><?php echo $found_qunatity; ?></span></td>
 				<td><button id="sell<?php echo $good['goodId']; ?>" price="<?php echo $new_price; ?>" value="<?php echo $good['goodName']; ?>" dbid="<?php echo $good['goodId']; ?>" name="btn-sell" class="btn btn-primary btn-sell ">Sell</button></td>
-				<td class="span">Loop: <?=$num?> found Id = <?=$found?> quantity: <?=$found_qunatity?></td>	
+				
 			</tr>
 		<?php }?>
 	</table>
