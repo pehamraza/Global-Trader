@@ -147,10 +147,10 @@ function pinc()
 							
 							if($good['goodId']===$gowned['goodId'])	
 							{
-								echo "<br />".$good['goodId']."==".$gowned['goodId'];
+								// echo "<br />".$good['goodId']."==".$gowned['goodId'];
 								// $found = $good['goodId'];
 								$found_qunatity = $gowned['quantity'];
-								echo $found_qunatity;
+								// echo $found_qunatity;
 								// $this->session->set_userdata('quantity_mess',$gowned['quantity']);
 								// echo "<br />loop: ".$loop." found id ".$gowned['goodId']." with quantity".$gowned['quantity']."<br />";
 								$NO = 0;
@@ -165,7 +165,7 @@ function pinc()
 					//else if($goods_owned==FALSE){ $found_qunatity=0;}
 
 					$oloop++;
-					 echo " Outer Loop: ".$oloop." quantity: ".$found_qunatity."<br />";
+					 // echo " Outer Loop: ".$oloop." quantity: ".$found_qunatity."<br />";
 			?>
 
 
