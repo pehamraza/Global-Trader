@@ -523,7 +523,7 @@
 			"file": "application/controllers/console.php",
 			"settings":
 			{
-				"buffer_size": 10430,
+				"buffer_size": 10696,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "application/views/console/dashboard.php",
 			"settings":
 			{
-				"buffer_size": 15419,
+				"buffer_size": 15498,
 				"line_ending": "Unix"
 			}
 		},
@@ -586,7 +586,15 @@
 			"file": "resources/js/js.js",
 			"settings":
 			{
-				"buffer_size": 9776,
+				"buffer_size": 9462,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/wamp/www/wptest/wp-config.php",
+			"settings":
+			{
+				"buffer_size": 3053,
 				"line_ending": "Windows"
 			}
 		},
@@ -786,7 +794,7 @@
 	],
 	"find":
 	{
-		"height": 65.0
+		"height": 59.0
 	},
 	"find_in_files":
 	{
@@ -803,6 +811,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$this->session->set_userdata('quantity_mess',0);",
 			"quantity_mess",
 			"goods_q",
 			"session_start();",
@@ -929,8 +938,7 @@
 			"btn-portfolio",
 			"jpg\"></a></span>",
 			"</a></span>",
-			"pehamraza@gmail.com",
-			"r_m"
+			"pehamraza@gmail.com"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1084,15 +1092,15 @@
 					"file": "application/controllers/console.php",
 					"settings":
 					{
-						"buffer_size": 10430,
+						"buffer_size": 10696,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8652,
-								8652
+								9106,
+								9106
 							]
 						],
 						"settings":
@@ -1100,8 +1108,8 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 39.0,
-						"translation.y": 4590.0,
+						"translation.x": 0.0,
+						"translation.y": 5170.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1111,15 +1119,15 @@
 					"file": "application/views/console/dashboard.php",
 					"settings":
 					{
-						"buffer_size": 15419,
+						"buffer_size": 15498,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5609,
-								5609
+								11328,
+								11328
 							]
 						],
 						"settings":
@@ -1127,8 +1135,8 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 2397.0,
+						"translation.x": 387.0,
+						"translation.y": 4617.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1191,7 +1199,7 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1283,15 +1291,15 @@
 					"file": "resources/js/js.js",
 					"settings":
 					{
-						"buffer_size": 9776,
+						"buffer_size": 9462,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								156,
-								156
+								958,
+								922
 							]
 						],
 						"settings":
@@ -1300,13 +1308,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 655.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 8,
+					"file": "/E/wamp/www/wptest/wp-config.php",
+					"settings":
+					{
+						"buffer_size": 3053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								862,
+								862
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "resources/noty-2.2.2/demo/customContainer.html",
 					"settings":
 					{
@@ -1334,7 +1368,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "application/models/traders_model.php",
 					"settings":
 					{
@@ -1360,7 +1394,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "jquery.avgrund.js-master/example/index.html",
 					"settings":
 					{
@@ -1417,7 +1451,7 @@
 		"cols":
 		[
 			0.0,
-			0.629554655871,
+			0.511336032389,
 			1.0
 		],
 		"rows":

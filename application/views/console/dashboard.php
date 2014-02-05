@@ -139,27 +139,30 @@ function pinc()
 			// if()
 
 			$goods_owned = $this->session->userdata('goods_owned');
+						$found_qunatity=0;
 			if($goods_owned!=FALSE)
 					{$loop=0;
 						foreach($goods_owned as $gowned)
 						{$loop++;
+							
 							if($good['goodId']===$gowned['goodId'])	
 							{
 								echo "<br />".$good['goodId']."==".$gowned['goodId'];
 								// $found = $good['goodId'];
-								echo $found_qunatity = $gowned['quantity'];
+								$found_qunatity = $gowned['quantity'];
+								echo $found_qunatity;
 								// $this->session->set_userdata('quantity_mess',$gowned['quantity']);
 								// echo "<br />loop: ".$loop." found id ".$gowned['goodId']." with quantity".$gowned['quantity']."<br />";
 								$NO = 0;
-							}else{ $found_qunatity=0;}
+							}
 							
 						}
 
-						 if($NO==1){ $found_qunatity=0;}
+						 //if($NO==1){ $found_qunatity=0;}
 						
 					}
 					// else $quantity_mess = 0;
-					else if($goods_owned==FALSE){ $found_qunatity=0;}
+					//else if($goods_owned==FALSE){ $found_qunatity=0;}
 
 					$oloop++;
 					 echo " Outer Loop: ".$oloop." quantity: ".$found_qunatity."<br />";
@@ -208,7 +211,22 @@ else{?>
 					 	 	{
 					 	 		$sum =0; foreach($g as $gg){$sum = $sum + (int)$gg['quantity'];} 
 					 	 		echo $sum;
-					 	 	} else echo '0';?></span> / <span class="wagon_capacity">100</span></h4></div>
+					 	 	} else echo '0';
+
+							$new_blnc = $this->session->userdata('new_acc_blnc');
+							$acc_blnc = $this->session->userdata('acc_blnc');
+							if($new_blnc!=FALSE) $acc_blnc = $this->session->userdata('new_acc_blnc');
+							else{
+									 	if($acc_blnc!=FALSE) $acc_blnc = $acc_blnc;
+										 else $acc_blnc = 150;
+									 }
+
+							 $saving = $this->session->userdata('savings');
+							 if($saving == FALSE) $saving = 0;
+
+
+
+					 	 	?></span> / <span class="wagon_capacity">100</span></h4></div>
 					<div id="notycontainer">
 						
 					 </div>
@@ -218,7 +236,7 @@ else{?>
 									<h4 class="text-center">Bank</h4>
 									<hr>
 									<div class="row">
-										<div class="col-md-6"><p>On Hand: $150</p></div>
+										<div class="col-md-6"><p>On Hand: $<?php echo $acc_blnc ?></p></div>
 										<div class="col-md-6">
 											<button class="btn btn-default deposit-all pull-right" id="deposit-all">Deposit All</button>
 										</div>
@@ -261,7 +279,7 @@ else{?>
 									<h4 class="text-center">Loan</h4>
 									<hr>
 									<div class="row">
-										<div class="col-md-6"><p>On Hand: $150</p></div>
+										<div class="col-md-6"><p>On Hand: $<?php echo $acc_blnc; ?></p></div>
 										<div class="col-md-6">
 											<button class="btn btn-default deposit-all pull-right" id="deposit-all">Deposit All</button>
 										</div>
@@ -313,18 +331,8 @@ else{?>
 					</div>
 		<?php } ?>
 					<div class="statistics">
-						<?php 
-							$new_blnc = $this->session->userdata('new_acc_blnc');
-							$acc_blnc = $this->session->userdata('acc_blnc');
-							if($new_blnc!=FALSE) $acc_blnc = $this->session->userdata('new_acc_blnc');
-							else{
-									 	if($acc_blnc!=FALSE) $acc_blnc = $acc_blnc;
-										 else $acc_blnc = 150;
-									 }
-
-							 $saving = $this->session->userdata('savings');
-							 if($saving == FALSE) $saving = 0;
-
+						
+<?php 
 							 // $loan = $this->session->userdata('loan');
 							 if($loan == FALSE) $loan = 250;
 						?>
