@@ -262,7 +262,6 @@ quantity = Number(quantity);
                     blnc = blnc - rate;
                     // $('.acc-blnc').html(blnc);
                     quantity = Number(quantity) + 1;
-                    alert(quantity);
                     update_session(id, quantity,'0');
                     savings = null; loan = null;
                     update_acc_blnc(blnc);
