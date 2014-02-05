@@ -258,42 +258,16 @@ class Console extends CI_Controller {
 	public function update_session($goodId=NULL, $quantity=NULL, $type=NULL)
 	{
 		
-		// $this->session->unset_userdata('goods_owned');
-
-		// $post = $this->input->post('post'); // checking if the values are posted or not
-		// if(isset($post))
-		// 	{
-		// 		// echo "goodId: ";
-		// 		 $goodId = $this->input->post('goodId');
-		// 		// echo "quantity: ";
-		// 		 $quantity = $this->input->post('quantity');
-		// 		// echo "type: ";
-		// 		 $type = $this->input->post('type'); // 0/1 => 0 is + and 1 is -
-		// 	}
-
-
-			// -------------------echo $goodId; echo $quantity;
-		/// got vars till now /// asuming we have go all the vars
-
 		$new = array('goodId'=>$goodId, 'quantity'=>$quantity); //make an array of new goods
 
 		$prev_gowned = $this->session->userdata('goods_owned');
 		if($prev_gowned!=FALSE) // if we have the session
 		{
-			// $prev_gowned = $this->session->userdata('goods_owned'); // getting session array
-			// -------------------echo "array from session: ";
-			// -------------------print_r($prev_gowned);
-			// now foreach index of array we have to check whether the good is in session or not 
-
-			// -------------------echo "<br />count".
 			$c = count($prev_gowned); 
 			static $FOUND = 0;
 			for($a=0; $a<$c; $a++) /// traversing each index of array
 			{
 				if(!array_key_exists($a, $prev_gowned))$a++;
-				// -------------------echo "<br />inside loop: times:".$a."<br />";
-				// echo "<br /> checking if $prev_gowned\[".$a."]['goodId']".$prev_gowned[$a]['goodId']."==".$goodId."<br />";
-
 
 				if($prev_gowned[$a]['goodId']===$goodId) //---FINE// if we have that item in session
 				{
@@ -303,11 +277,7 @@ class Console extends CI_Controller {
 					$prev_gowned[$a]['quantity'] = $quantity;
 					// -------------------echo "array ready to update: "; print_r($prev_gowned);
 					$this->session->set_userdata('goods_owned',$prev_gowned);
-					// if($type == 0) /// 0 is plus
-					// {
-					// 	$prev_gowned[$c]['quantity'] = (int)$prev_gowned[$c]['quantity'] + (int)$quantity;
-					// }
-					// else $prev_gowned[$c]['quantity'] = (int)$prev_gowned[$c]['quantity'] - (int)$quantity;
+
 					$FOUND = 1;
 				}
 			}
@@ -315,24 +285,12 @@ class Console extends CI_Controller {
 
 			if($FOUND!=1)
 			{
-				// -------------------echo 'NOT FOUND';
+
 				$new_values[$c]['goodId'] = $new['goodId'];
 				$new_values[$c]['quantity'] = $new['quantity'];
 
-				// $new_values = array($new_values);
-				// -------------------echo "<br /><br />New Values:"; print_r($new_values);
-
 				$previous_values = $prev_gowned;
-				// -------------------echo "<br /><br />Previous Values:"; print_r($previous_values);
-
-				// $prev_gowned = array_merge($new_values, $prev_gowned);
-				// echo "<br />------------------";
-				// print_r($prev_gowned);
-				// echo "------------------<br />";
-				// $arr = array_push($previous_values, $new_values);
 				$arr = array_merge($previous_values,$new_values);
-				// -------------------echo "<br /><br />Final array to update: ";
-				 // -------------------print_r($newish);
 
 				$this->session->set_userdata('goods_owned',$arr);	
 			}
