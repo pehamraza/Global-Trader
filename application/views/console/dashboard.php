@@ -136,15 +136,15 @@ function pinc()
 			if($new_price==0)$new_price = $new_price+1;
 			$account_balance = $this->session->userdata('acc_blnc');
 			if($account_balance<=$new_price){$class="disabled btn-default";}else $class=NULL;
-			// if()
 
 			$goods_owned = $this->session->userdata('goods_owned');
-						$found_qunatity=0;
+			$found_qunatity=0;
+			
 			if($goods_owned!=FALSE)
-					{$loop=0;
+					{//$loop=0;
 						foreach($goods_owned as $gowned)
-						{$loop++;
-							
+						{
+							// $loop++;
 							if($good['goodId']===$gowned['goodId'])	
 							{
 								// echo "<br />".$good['goodId']."==".$gowned['goodId'];
@@ -154,7 +154,6 @@ function pinc()
 								// $this->session->set_userdata('quantity_mess',$gowned['quantity']);
 								// echo "<br />loop: ".$loop." found id ".$gowned['goodId']." with quantity".$gowned['quantity']."<br />";
 							}
-							
 						}
 					}
 					// $oloop++;
