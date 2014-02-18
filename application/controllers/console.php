@@ -10,6 +10,7 @@ class Console extends CI_Controller {
 		//session_start();
 		$this->load->model('traders_model','tmodel');
 		
+		session_start();
 	}
 
 	public function index(){
@@ -217,15 +218,6 @@ class Console extends CI_Controller {
 	}
 
 
-	function update_acc_blnc($amount)
-	{
-		//session_start();
-			// echo $this->session->userdata('new_acc_blnc');
-		$this->session->set_userdata('new_acc_blnc',$amount);
-		$this->session->set_userdata('new_acc_blnc',$amount);
-		echo $this->session->userdata('new_acc_blnc');
-	}
-
 	// load game details
 	public function get_continents(){}
 	public function get_contries($continents){}
@@ -325,8 +317,25 @@ class Console extends CI_Controller {
 			echo $a[1]['goodId'];
 
 		}
-		
 
+		public function update_acc_blnc($amount)
+		{
+			// session_start();
+				// echo $this->session->userdata('new_acc_blnc');
+			$this->session->set_userdata('acc_blnc', NULL);
+			$this->session->set_userdata('acc_blnc', $amount);
+			// $this->session->set_userdata('new_acc_blnc',$amount);
+			echo $this->session->userdata('acc_blnc');
+		}		
+
+		public function get_acc_balance()
+		{
+			// session_start();
+			$ac_b = $this->session->userdata('acc_blnc');
+			if($ac_b==NULL) echo 150;
+			// $new_ac_b = $this->session->userdata('new_acc_blnc');
+			// if($new_ac_b!=FALSE) echo $new_ac_b; else echo $ac_b;
+		}
 }
 
 /* End of file welcome.php */

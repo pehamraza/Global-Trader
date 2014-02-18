@@ -4,12 +4,30 @@ $(document).ready(function($) {
 	var btnId = $('.btn-buy').attr('id');
 	$('#bankdiv').hide();
 	$('#loandiv').hide();
-checks();
+	checks();
 
+
+function get_acc_blnc()
+	{
+		$.ajax({
+			url: '../../console/get_acc_balance/',
+			cache: false,
+			success: function(blnc)
+				{
+					console.log('blnc is '+blnc);
+					// $('.acc-blnc').html(blnc);
+				},
+			error: function(msg)
+				{console.log('error occured '+msg);}
+		});
+
+
+		
+	}
 // CHECKS
 function checks(id)
 {
-	var cblnc = Number($('.acc-blnc').html());
+	var cblnc = get_acc_blnc();
 	// var qntity = Number($('#q'+id).html());
 	var a=1; var b = 10
 	for(a=1; a<b; a++)
@@ -45,6 +63,7 @@ function checks(id)
 function update_session(id, quantity,type)
 {
 	$.ajax({
+		cache: false,
 		url: '../../console/update_session/'+id+'/'+quantity+'/'+type,
 		// type: 'post',
 		// data: {post: '1', 'goodId': id, 'quantity': quantity, 'type': type},
@@ -133,7 +152,7 @@ function update_acc_blnc(blnc)
 {
 	$.ajax({
 		url: '../../console/update_acc_blnc/'+blnc,
-		type: 'POST',
+		type: 'GET',
 		cache: false,
 		success: function(b)
 		{
